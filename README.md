@@ -2,7 +2,7 @@
 
 ### Steps needed to create a cloud based environment with security and VPN
 
-- [ ] Create AWS auth keys 
+- [ ] Create [AWS auth keys](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_AWS_Keys.md)
 
 
 - [ ] Launch EC2 with AWS CLI locally 
