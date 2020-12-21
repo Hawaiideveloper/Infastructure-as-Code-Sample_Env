@@ -56,7 +56,7 @@
     - [ ] [MacOS](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html)
         - Later on I will be using linux and the virtual env (Jenkins as my launcher for everything) as I hate remembering anything and Jenkins allows a section for notes and such
         - Latest version of AWS CLI
-        - [Script for AWS CLI installer](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI_installer.sh)
+        - [Script for AWS CLI installer](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI/AWS_CLI_installer.sh)
  - [ ] Feel free to read through [this document](https://github.com/Hawaiideveloper/Sample_Env/blob/main/aws-cli-reads.pdf) if you want learn more about the AWSCLI
  - Use [Windows subshell](https://docs.microsoft.com/en-us/windows/wsl/install-win10) if you do not have a linux or MacOs system. 
  
@@ -75,13 +75,13 @@
 
 #### The folllowing script will get your AWS CLI runnning after you authenticate the terminal
 ```
-curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/main/AWS_CLI_installer.sh && chmod +x AWS_CLI_installer.sh && ./AWS_CLI_installer.sh 
+curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI/AWS_CLI_installer.sh && chmod +x AWS_CLI_installer.sh && ./AWS_CLI_installer.sh 
 ```
 
 #### The next script will get your credentials working after the installer finishes
 
 ```
-curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/blob/main/aws_creds_configure_step2.sh && chmod +x aws_creds_configure_step2.sh && ./aws_creds_configure_step2.sh
+curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI/aws_creds_configure_step2.sh && chmod +x aws_creds_configure_step2.sh && ./aws_creds_configure_step2.sh
 ```
  
  ### If you want to configure a virtual env for later use click the links below:
@@ -92,7 +92,7 @@ curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/blob/main
 
 
 
-### Step 8: Moving on to testing AWSCLI and launching instances
+### Step 8: Moving on to testing Terraform and launching instances along with VPCs
 - [Leave this page and proceed to the following steps](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Launching_EC2_Instances.sh)
 
 
