@@ -1,3 +1,17 @@
+# AWS Keys are the very first thing you need to get going and successful on building automation for the project mentioned in the README
+
+
+
+
+####  Step 1: Read the README so you know what is the plan!
+#### Step 2: I do not like winging anything and therefore if you have questions or fresh new ideas, please submit an issue
+#### Step 3: This is something I do on the side for fun, so do not expect full support 24x7
+
+
+
+
+
+
 ## Recommendation #1
 Get yourself a [password manager](https://www.cnet.com/how-to/best-password-manager-to-use-for-2020-1password-lastpass-and-more-compared/) that can record passwords for you or use the old school paper and pad
 However thing could really suck if you are away from your paper and pad and need to do something magical from a plane because of an emergency:
