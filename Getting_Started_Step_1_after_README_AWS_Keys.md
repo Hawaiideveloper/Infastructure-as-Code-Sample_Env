@@ -42,7 +42,7 @@
        - [ ] Look for and check box for AmazonVPCFullAccess within IAM
       - [ ] Click Add permissions
       - [ ] You are now properly setup to run AWSCLI VPC commands
-          - Now test with the following command:
+         ###### - Now test with the following command:
           ```
           aws ec2 create-vpc --cidr-block 10.0.0.0/16
           ```
