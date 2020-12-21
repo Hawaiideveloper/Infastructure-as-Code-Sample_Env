@@ -9,7 +9,7 @@
 - [x] Setup [access to create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_Step_1_after_README_AWS_Keys.md#make-a-group-name-called-vpcadmins)
 - [x] Test your access to [create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_Step_1_after_README_AWS_Keys.md#--now-test-with-the-following-command)
 
-- [ ] Launch EC2 with AWS CLI locally 
+- [ ] Launch EC2 with VPC using TerraForm
 
 - [ ] Configure EC2 to server the following applications: 
     - [ ] Git
