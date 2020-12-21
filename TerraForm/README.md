@@ -5,7 +5,7 @@
 
 - [x] [MacOS](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/MacOS_TerraForm_Installer.sh)
 
-- [ ] [Ubuntu]()
+- [ ] [Ubuntu](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/Ubuntu_TerraForm_installer.sh)
 
 
 
