@@ -10,7 +10,7 @@
 - [x] Test your access to [create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#--now-test-with-the-following-command)
 
 - [ ] Launch EC2 with VPC using TerraForm
-    - [ ] Setup TerraForm
+    - [ ] [Setup TerraForm](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm)
     - [ ] Configure TerraForm
     - [ ] Create an EC2 and place it into a specified VPC
         - [ ] Create a plan for VPC
