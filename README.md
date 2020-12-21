@@ -4,7 +4,7 @@
 
 - [x] Create [AWS auth keys](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_AWS_Keys.md)
 - [x] Add User to [Admin Group](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_Step_1_after_README_AWS_Keys.md#make-a-group-name-called-admins)
-- [x] Test your [AWS CLI](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_Step_1_after_README_AWS_Keys.md#step-6-test-aws-cli)
+- [x] Test your [AWS CLI](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_Step_1_after_README_AWS_Keys.md#aws-iam-list-access-keys)
 
 
 - [ ] Launch EC2 with AWS CLI locally 
