@@ -24,8 +24,8 @@
  - [x] Setup permission boundary to control where the user can access
  - [x] I selected AdminstratorAccess
      - [x] Add a key-value pair so you can quickly recognize the user
- - [x] Make note of your login URL it will be something like:
-     - [ ]  https://12345678912344.signin.aws.amazon.com/console
+ - [x] Make note of your login URL it will be something like replace numbers 1234567890 with your account number:
+     - [ ]  https://1234567890.signin.aws.amazon.com/console
      - [x] download your .csv and get both your:
          - [ ] Access Key
          - [ ] Secret access key
