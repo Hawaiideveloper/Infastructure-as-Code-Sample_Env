@@ -10,25 +10,48 @@
 - [x] Test your access to [create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#--now-test-with-the-following-command)
 
 - [ ] Launch EC2 with VPC using TerraForm
-
-
-- [ ] Configure EC2 to server the following applications: 
-    - [ ] Git
-    - [ ] Docker 
-    - [ ] Terraform
-    - [ ] Kubernetes
-    - [ ] Jenkins
-    - [ ] KanBoard
-
-
-### Then proceed to setup the applications on the EC2 using Terraform
-- [ ] Kubernetes
-- [ ] Linux based VPN EC2 
-- [ ] Docker
-- [ ] Global authentication
-- [ ] DNS
+    - [ ] Setup TerraForm
+    - [ ] Configure TerraForm
+    - [ ] Create an EC2 and place it into a specified VPC
+    - [ ] Create a plan for VPC
+    - [ ] Create the EC2 and place it into the VPC
+    - [ ] Setup VPN
+    - [ ] Global authentication system for team logins
+    - [ ] Setup DNS
+    
+- [ ] Using Ansible
+    - [ ] Setup Ansible
+    - [ ] Configure Ansible
+    - [ ] Test Ansible
+    - [ ] Deploy configuration and installation of applications listed below inside of EC2
+        - [ ] Git
+            - [ ] Getting started with Docker and its images
+            - [ ] Build Jenkins image
+            - [ ] Using Jenkins
+                - [ ] Setup Jenkins into container
+                - [ ] Deploy KanBoard container object
+                - [ ] Deploy NodeJS App container
+                - [ ] Create a website container
+        - [ ] Getting started with Kubernetes
+            - [ ] Setup and Install
+            - [ ] Management of containers and review dashboard
+            - [ ] Setup load balancer
+            - [ ] Spin-up and turn down of containers
+      
+        
+### Migrations of VMs to Containers
 - [ ] Migrate Web server to a new container
 - [ ] Migrate MongoDB documents to new MongoDB container
+    
+    
+
+   
+
+
+
+
+
+
 
 
 
