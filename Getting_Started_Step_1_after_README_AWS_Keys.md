@@ -32,6 +32,7 @@
 
 ### Step 6: Test AWS CLI 
 - [ ] You will need access to a command line interface
+- [ ] Feel free to read through [this document](https://github.com/Hawaiideveloper/Sample_Env/blob/main/aws-cli-reads.pdf) if you want learn more about the AWSCLI
  - Use [Windows subshell](https://docs.microsoft.com/en-us/windows/wsl/install-win10) if you do not have a linux or MacOs system
 - [ ] install AWSCLI
     - [ ] [MacOS](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html)
