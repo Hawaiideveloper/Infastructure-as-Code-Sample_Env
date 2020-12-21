@@ -1,22 +1,11 @@
 # Terraform Getting started with EC2 and VPC
 
 
-### Install TerraForm for MacOS
+#### Install TerraForm for the approriate system
 
-###### First, install the HashiCorp tap, a repository of all our Homebrew packages.
-```
-brew tap hashicorp/tap
-```
+- [x] [MacOS]()
 
-###### Now, install Terraform
-
-```
-brew install hashicorp/tap/terraform
-```
+- [ ] [Ubuntu]()
 
 
-###### Verify it works
-```
-terraform -help
-```
 
