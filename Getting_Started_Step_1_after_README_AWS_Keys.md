@@ -34,6 +34,10 @@
 - [ ] You will need access to a command line interface
  - Use [Windows subshell](https://docs.microsoft.com/en-us/windows/wsl/install-win10) if you do not have a linux or MacOs system
 - [ ] install AWSCLI
+    - [ ] [MacOS](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html)
+        - Later on I will be using linux and the virtual env (Jenkins as my launcher for everything) as I hate remembering anything and Jenkins allows a section for notes and such
+    - [ ] [Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
+      - [virtual environment](https://docs.aws.amazon.com/cli/latest/userguide/install-virtualenv.html)
 ## Recommendation #1
 Get yourself a [password manager](https://www.cnet.com/how-to/best-password-manager-to-use-for-2020-1password-lastpass-and-more-compared/) that can record passwords for you or use the old school paper and pad
 However thing could really suck if you are away from your paper and pad and need to do something magical from a plane because of an emergency:
