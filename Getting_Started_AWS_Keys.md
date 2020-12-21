@@ -16,14 +16,14 @@
 Get yourself a [password manager](https://www.cnet.com/how-to/best-password-manager-to-use-for-2020-1password-lastpass-and-more-compared/) that can record passwords for you or use the old school paper and pad
 However thing could really suck if you are away from your paper and pad and need to do something magical from a plane because of an emergency:
 - I have been on flights and with family and my job needs me to do something and I forgot that paper at home
-    - [ ] Lastpass is my 1st choice
+    - [x] Lastpass is my 1st choice
     - [ ] Keepass is my  2nd choice
 
 
 
 ####  Go to your favorite web browser 
-- [ ] I like google chrome, but feel free to use your favorite one that supports JavaScript
-    - [ ] Google provides a console that is seemless and also allows me to inspect elements as well as change thigns real-time and see the effects immediately
+- [x] I like google chrome, but feel free to use your favorite one that supports JavaScript
+    - [x] Google provides a console that is seemless and also allows me to inspect elements as well as change thigns real-time and see the effects immediately
 
 
 ####  AWS  console
