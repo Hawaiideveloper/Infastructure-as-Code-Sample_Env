@@ -22,3 +22,7 @@ echo "it has been sourced and is ready for use"
 
 # Check that it is installed correctly
 aws --version
+
+
+
+https://github.com/Hawaiideveloper/Sample_Env/blob/main/aws_creds_configure_step2.sh
