@@ -36,7 +36,12 @@
      - [ ] Your user is now part of the Admins group
      - [ ] Click Add permissions
      - [ ] You are now properly setup to run AWSCLI commands
-     
+    #### Make a group name called vpcAdmins
+     - [ ] Select Create Group
+     - [ ] Check AdministratorAccess then click create group
+       - [ ] Look for and check box for AmazonVPCFullAccess within IAM
+      - [ ] Click Add permissions
+      - [ ] You are now properly setup to run AWSCLI VPC commands
 ### Step 5.5
 
 - [ ] Install AWSCLI
