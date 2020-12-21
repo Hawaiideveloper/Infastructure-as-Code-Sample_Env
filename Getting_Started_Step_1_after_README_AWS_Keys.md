@@ -49,7 +49,7 @@ curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/main/AWS_
       - [virtual environment](https://docs.aws.amazon.com/cli/latest/userguide/install-virtualenv.html)
       
 ### Step 7: Moving on to testing AWSCLI and launching instances
-- [Leave this page and proceed to the following steps]()
+- [Leave this page and proceed to the following steps](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Launching_EC2_Instances.sh)
 
 
 
