@@ -5,7 +5,7 @@
 
 
 ## Disclaimer:
-> *Use of this repo constitutes your willingness and liability to read and make your own decisions.  This repo is for educational experience only.  Therefore all liability, or legal matters are forfeited by both the reader and writer of this walkthrough and all of its documentation provides no guarantee of services and content may change without notice.*
+> *Use of this repo constitutes your willingness and liability to read and make your own decisions.  This repo is for educational experience only.  Therefore all liability, or legal matters are forfeited by both the reader and writer of this walkthrough and all of its documentation provides no guarantee of services and content may change without notice.  Neither AlcoTerra, Halfawayservices or any company that Corey Albright works with or for or afterwards constitues an agreement or liability to access such systems or any liability.*  For this tutorial I will be mentioning MacOS commands as that is my preferred system.  It is recommended that the user find equivelent systems like Linux or have access to a terminal based system like Windows Subsystem for Linux.
 
 
 
@@ -31,6 +31,9 @@
          - [ ] Secret access key
 
 ### Step 6: Launch an EC2 instance using the AWS CLI and your access Key from step 5
+- [ ] You will need access to a command line interface
+ - Use [Windows subshell](https://docs.microsoft.com/en-us/windows/wsl/install-win10) if you do not have a linux or MacOs system
+- [ ] install AWSCLI
 ## Recommendation #1
 Get yourself a [password manager](https://www.cnet.com/how-to/best-password-manager-to-use-for-2020-1password-lastpass-and-more-compared/) that can record passwords for you or use the old school paper and pad
 However thing could really suck if you are away from your paper and pad and need to do something magical from a plane because of an emergency:
