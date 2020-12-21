@@ -19,14 +19,14 @@
 ### Step 3: Go to the Security, Identity, & Compliance Section and select IAM
 ### Step 4: Look on the left under Access Management and search for Users
 ### Step 5: Add User
- - [ ] I recommend a user with numbers and letters so it is not easily compromised
- - [ ] Give the user Programmatic access
- - [ ] Setup permission boundary to control where the user can access
- - [ ] I selected AdminstratorAccess
-     - [ ] Add a key-value pair so you can quickly recognize the user
- - [ ] Make note of your login URL it will be something like:
+ - [x] I recommend a user with numbers and letters so it is not easily compromised
+ - [x] Give the user Programmatic access
+ - [x] Setup permission boundary to control where the user can access
+ - [x] I selected AdminstratorAccess
+     - [x] Add a key-value pair so you can quickly recognize the user
+ - [x] Make note of your login URL it will be something like:
      - [ ]  https://12345678912344.signin.aws.amazon.com/console
-     - [ ] download your .csv and get both your:
+     - [x] download your .csv and get both your:
          - [ ] Access Key
          - [ ] Secret access key
 
