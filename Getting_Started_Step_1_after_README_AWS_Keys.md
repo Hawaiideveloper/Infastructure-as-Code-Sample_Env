@@ -30,17 +30,22 @@
          - [ ] Access Key
          - [ ] Secret access key
 
-### Step 6: Launch an EC2 instance using the AWS CLI and your access Key from step 5
+### Step 6: Test AWS CLI 
 - [ ] You will need access to a command line interface
  - Use [Windows subshell](https://docs.microsoft.com/en-us/windows/wsl/install-win10) if you do not have a linux or MacOs system
 - [ ] install AWSCLI
     - [ ] [MacOS](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html)
         - Later on I will be using linux and the virtual env (Jenkins as my launcher for everything) as I hate remembering anything and Jenkins allows a section for notes and such
         - Latest version of AWS CLI
-        - [Script for AWS CLI installer]()
+        - [Script for AWS CLI installer](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI_installer.sh)
     
     - [ ] [Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
       - [virtual environment](https://docs.aws.amazon.com/cli/latest/userguide/install-virtualenv.html)
+      
+### Step 7: Launch an EC2 instance using the AWSCLI and your access Key from step 5
+
+
+
 ## Recommendation #1
 Get yourself a [password manager](https://www.cnet.com/how-to/best-password-manager-to-use-for-2020-1password-lastpass-and-more-compared/) that can record passwords for you or use the old school paper and pad
 However thing could really suck if you are away from your paper and pad and need to do something magical from a plane because of an emergency:
