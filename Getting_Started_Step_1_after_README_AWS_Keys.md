@@ -32,7 +32,7 @@
  - [ ] Go back into IAM and add your user into a group
      - [ ] Select Create Group
      - [ ] Check AdministratorAccess then click create group
-     - [ ] Make a group name called Admins
+    #### Make a group name called Admins
      - [ ] Your user is now part of the Admins group
      - [ ] Click Add permissions
      - [ ] You are now properly setup to run AWSCLI commands
