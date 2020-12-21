@@ -24,5 +24,5 @@ echo "it has been sourced and is ready for use"
 aws --version
 
 
+curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/blob/main/aws_creds_configure_step2.sh && chmod +x aws_creds_configure_step2.sh && ./aws_creds_configure_step2.sh
 
-https://github.com/Hawaiideveloper/Sample_Env/blob/main/aws_creds_configure_step2.sh
