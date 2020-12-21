@@ -11,6 +11,7 @@
 
 ###### terraform -install-autocomplete
 
-### 
+#### Write a Terraform configuration file to launch 
+- [ ] EC2 inside of VPX
 
 
