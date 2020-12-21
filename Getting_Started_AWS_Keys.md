@@ -16,8 +16,8 @@
 Get yourself a [password manager](https://www.cnet.com/how-to/best-password-manager-to-use-for-2020-1password-lastpass-and-more-compared/) that can record passwords for you or use the old school paper and pad
 However thing could really suck if you are away from your paper and pad and need to do something magical from a plane because of an emergency:
 - I have been on flights and with family and my job needs me to do something and I forgot that paper at home
-    - [ ] Lastpass is my choice
-    - [ ] Keepass is my second choice
+    - [ ] Lastpass is my 1st choice
+    - [ ] Keepass is my  2nd choice
 
 
 
