@@ -42,22 +42,26 @@
         - [Script for AWS CLI installer](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI_installer.sh)
 
 
-## The folllowing script will get your AWS CLI runnning after you authenticate the terminal
+
+### Step 7: Setup your aws credential file
+
+#### The folllowing script will get your AWS CLI runnning after you authenticate the terminal
 ```
 curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/main/AWS_CLI_installer.sh && chmod +x AWS_CLI_installer.sh && ./AWS_CLI_installer.sh 
 ```
 
-## The next script will get your credentials working after the installer finishes
+#### The next script will get your credentials working after the installer finishes
 
 ```
 curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/blob/main/aws_creds_configure_step2.sh && chmod +x aws_creds_configure_step2.sh && ./aws_creds_configure_step2.sh
 ```
-    
+ 
+ ### If you want to configure a virtual env for later use click the links below:
     - [ ] [Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
       - [virtual environment](https://docs.aws.amazon.com/cli/latest/userguide/install-virtualenv.html)
 
 
-### Step 7: Setup your aws credential file
+
 
 
 ### Step 8: Moving on to testing AWSCLI and launching instances
