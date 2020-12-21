@@ -11,6 +11,7 @@
 
 - [ ] Launch EC2 with VPC using TerraForm
 
+
 - [ ] Configure EC2 to server the following applications: 
     - [ ] Git
     - [ ] Docker 
