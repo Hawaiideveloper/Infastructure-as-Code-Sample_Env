@@ -41,7 +41,7 @@
         - Latest version of AWS CLI
         - [Script for AWS CLI installer](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI_installer.sh)
           
-        ```curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/branch/AWS_CLI_installer.sh```
+        ```curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/main/AWS_CLI_installer.sh```
     
     - [ ] [Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
       - [virtual environment](https://docs.aws.amazon.com/cli/latest/userguide/install-virtualenv.html)
