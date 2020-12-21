@@ -13,11 +13,12 @@
     - [ ] Setup TerraForm
     - [ ] Configure TerraForm
     - [ ] Create an EC2 and place it into a specified VPC
-    - [ ] Create a plan for VPC
-    - [ ] Create the EC2 and place it into the VPC
+        - [ ] Create a plan for VPC
+        - [ ] Create the EC2 and place it into the VPC
     - [ ] Setup VPN
     - [ ] Global authentication system for team logins
     - [ ] Setup DNS
+        [ ] Optional setup Dynamic tunnels for agent services
     
 - [ ] Using Ansible
     - [ ] Setup Ansible
