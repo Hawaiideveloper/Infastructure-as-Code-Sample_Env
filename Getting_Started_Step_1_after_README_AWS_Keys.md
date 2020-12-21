@@ -37,7 +37,15 @@
      - [ ] Click Add permissions
      - [ ] You are now properly setup to run AWSCLI commands
      
+### Step 5.5
 
+- [ ] Install AWSCLI
+    - [ ] [MacOS](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html)
+        - Later on I will be using linux and the virtual env (Jenkins as my launcher for everything) as I hate remembering anything and Jenkins allows a section for notes and such
+        - Latest version of AWS CLI
+        - [Script for AWS CLI installer](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI_installer.sh)
+ - [ ] Feel free to read through [this document](https://github.com/Hawaiideveloper/Sample_Env/blob/main/aws-cli-reads.pdf) if you want learn more about the AWSCLI
+ - Use [Windows subshell](https://docs.microsoft.com/en-us/windows/wsl/install-win10) if you do not have a linux or MacOs system. 
  
 
 ### Step 6: Test AWS CLI 
@@ -46,14 +54,7 @@
  aws iam list-access-keys
  ```
  
-- [ ] Feel free to read through [this document](https://github.com/Hawaiideveloper/Sample_Env/blob/main/aws-cli-reads.pdf) if you want learn more about the AWSCLI
- - Use [Windows subshell](https://docs.microsoft.com/en-us/windows/wsl/install-win10) if you do not have a linux or MacOs system. 
- 
-- [ ] Install AWSCLI
-    - [ ] [MacOS](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html)
-        - Later on I will be using linux and the virtual env (Jenkins as my launcher for everything) as I hate remembering anything and Jenkins allows a section for notes and such
-        - Latest version of AWS CLI
-        - [Script for AWS CLI installer](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI_installer.sh)
+
 
 
 
