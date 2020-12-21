@@ -9,7 +9,7 @@
 - [x] Setup [access to create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#make-a-group-name-called-vpcadmins)
 - [x] Test your access to [create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#--now-test-with-the-following-command)
 
-- [ ] Go Terraform and complete the excercises here
+- [ ] Go Terraform and create the configurations located [here](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/configurations)
     - [ ] Setup VPN
     - [ ] Global authentication system for team logins
     - [ ] Setup DNS
