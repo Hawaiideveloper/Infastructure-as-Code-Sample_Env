@@ -4,6 +4,7 @@
 
 - [x] Create [AWS auth keys](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_AWS_Keys.md)
 - [x] Add User to [Admin Group](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_Step_1_after_README_AWS_Keys.md#make-a-group-name-called-admins)
+- [x] Install the [AWS CLI](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI_installer.sh)
 - [x] Test your [AWS CLI](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Getting_Started_Step_1_after_README_AWS_Keys.md#step-6-test-aws-cli)
 
 
