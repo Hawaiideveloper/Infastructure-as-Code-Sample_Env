@@ -23,6 +23,7 @@ However thing could really suck if you are away from your paper and pad and need
 
 ####  Go to your favorite web browser 
 - [ ] I like google chrome, but feel free to use your favorite one that supports JavaScript
+    - [ ] Google provides a console that is seemless and also allows me to inspect elements as well as change thigns real-time and see the effects immediately
 
 
 ####  AWS  console
