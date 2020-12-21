@@ -18,8 +18,19 @@
  
 ### Step 3: Go to the Security, Identity, & Compliance Section and select IAM
 ### Step 4: Look on the left under Access Management and search for Users
+### Step 5: Add User
+ - [ ] I recommend a user with numbers and letters so it is not easily compromised
+ - [ ] Give the user Programmatic access
+ - [ ] Setup permission boundary to control where the user can access
+ - [ ] I selected AdminstratorAccess
+     - [ ] Add a key-value pair so you can quickly recognize the user
+ - [ ] Make note of your login URL it will be something like:
+     - [ ]  https://12345678912344.signin.aws.amazon.com/console
+     - [ ] download your .csv and get both your:
+         - [ ] Access Key
+         - [ ] Secret access key
 
-
+### Step 6: Launch an EC2 instance using the AWS CLI and your access Key from step 5
 ## Recommendation #1
 Get yourself a [password manager](https://www.cnet.com/how-to/best-password-manager-to-use-for-2020-1password-lastpass-and-more-compared/) that can record passwords for you or use the old school paper and pad
 However thing could really suck if you are away from your paper and pad and need to do something magical from a plane because of an emergency:
