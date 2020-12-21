@@ -29,6 +29,16 @@
      - [x] download your .csv and get both your:
          - [ ] Access Key
          - [ ] Secret access key
+ - [ ] Go back into IAM and add your user into a group
+     - [ ] Select Create Group
+     - [ ] Check AdministratorAccess then click create group
+     - [ ] Make a group name called Admins
+     - [ ] Your user is now part of the Admins group
+     - [ ] Click Add permissions
+     - [ ] You are now properly setup to run AWSCLI commands
+     
+
+ 
 
 ### Step 6: Test AWS CLI 
 - [ ] You will need access to a command line interface
