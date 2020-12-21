@@ -11,7 +11,7 @@
 
 - [ ] Launch EC2 with VPC using TerraForm
     - [ ] [Setup TerraForm](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm)
-    - [ ] Configure TerraForm
+    - [ ] [Configure TerraForm](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/README.md#terraform--install-autocomplete)
     - [ ] Create an EC2 and place it into a specified VPC
         - [ ] Create a plan for VPC
         - [ ] Create the EC2 and place it into the VPC
