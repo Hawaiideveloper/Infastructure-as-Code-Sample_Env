@@ -12,6 +12,6 @@
 ###### terraform -install-autocomplete
 
 #### Write a Terraform [configuration file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/configurations/example.tf) to launch 
-- [ ] EC2 inside of VPX
+- [ ] EC2 inside of VPC
 
 
