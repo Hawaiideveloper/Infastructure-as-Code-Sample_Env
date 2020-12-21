@@ -36,6 +36,9 @@
 - [ ] install AWSCLI
     - [ ] [MacOS](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html)
         - Later on I will be using linux and the virtual env (Jenkins as my launcher for everything) as I hate remembering anything and Jenkins allows a section for notes and such
+        - Latest version of AWS CLI
+        - [Script for AWS CLI installer]()
+    
     - [ ] [Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
       - [virtual environment](https://docs.aws.amazon.com/cli/latest/userguide/install-virtualenv.html)
 ## Recommendation #1
