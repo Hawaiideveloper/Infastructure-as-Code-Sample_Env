@@ -4,6 +4,9 @@
 ### to get going and successful on building automation for the project mentioned in the README
 
 
+## Disclaimer:
+> *Use of this repo constitutes your willingness and liability to read and make your own decisions.  This repo is for educational experience only.  Therefore all liability, or legal matters are forefeitted by both the reader and writer of this walkthrough and all of its documentation provides no guarantee of services and content may change without notice.*
+
 
 
 
@@ -13,7 +16,8 @@
  - [ ] Use this [link](https://aws.amazon.com/console/) to quickly find it and setup an account
  - [x] Use this if you already have an AWS account [link to login](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&forceMobileApp=0&code_challenge=dlhxv7rVnZ0x4unaEqcagTwHiG4e80jbd2ij_UMuq-0&code_challenge_method=SHA-256)
  
- 
+### Step 3: Go to the Security, Identity, & Compliance Section and select IAM
+### Step 4: Look on the left under Access Management and search for Users
 
 
 ## Recommendation #1
