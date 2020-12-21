@@ -5,7 +5,7 @@
 
 
 ## Disclaimer:
-> *Use of this repo constitutes your willingness and liability to read and make your own decisions.  This repo is for educational experience only.  Therefore all liability, or legal matters are forefeitted by both the reader and writer of this walkthrough and all of its documentation provides no guarantee of services and content may change without notice.*
+> *Use of this repo constitutes your willingness and liability to read and make your own decisions.  This repo is for educational experience only.  Therefore all liability, or legal matters are forfeited by both the reader and writer of this walkthrough and all of its documentation provides no guarantee of services and content may change without notice.*
 
 
 
