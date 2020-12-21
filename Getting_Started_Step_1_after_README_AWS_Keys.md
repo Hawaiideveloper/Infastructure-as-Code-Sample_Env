@@ -48,7 +48,9 @@ curl -LJO https://raw.githubusercontent.com/Hawaiideveloper/Sample_Env/main/AWS_
     - [ ] [Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
       - [virtual environment](https://docs.aws.amazon.com/cli/latest/userguide/install-virtualenv.html)
       
-### Step 7: Launch an EC2 instance using the AWSCLI and your access Key from step 5
+### Step 7: Moving on to testing AWSCLI and launching instances
+- [Leave this page and proceed to the following steps]()
+
 
 
 
