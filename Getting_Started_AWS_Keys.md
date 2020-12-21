@@ -18,12 +18,6 @@
  
 
 ####  Step 1: Read the README so you know what is the plan!
-#### Step 2: I do not like winging anything and therefore if you have questions or fresh new ideas, please submit an issue and reference it with a pull request if you have one.
-#### Step 3: This is something I do on the side for fun, so do not expect full support 24x7
-
-
-
-
 
 
 ## Recommendation #1
