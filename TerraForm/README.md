@@ -8,9 +8,9 @@
 - [ ] [Ubuntu](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/Installers/Ubuntu_TerraForm_installer.sh)
 
 - [x] Setup auto complete if you want to short hand commands  by running this short script
-```
-terraform -install-autocomplete
-```
+
+###### terraform -install-autocomplete
+
 ### 
 
 
