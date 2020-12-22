@@ -38,4 +38,10 @@ The main.tf file will create a:
 
 #### However I see the future of this file looking huge and I would like to create a [.tvars extension file]()
 
+The file will be used for:
+
+dev.tvars
+staging.tvars
+production.tvars
+
 
