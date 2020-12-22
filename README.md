@@ -12,7 +12,7 @@
 - [x] Use [Terraform](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/) configuration file to standup a production environment
     
    
-- [ ] Using Ansible
+- [ ] Use Ansible to configure the previous environment that Terraform created
     - [ ] Setup Ansible
     - [ ] Configure Ansible
     - [ ] Test Ansible
