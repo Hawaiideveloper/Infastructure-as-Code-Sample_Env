@@ -9,7 +9,7 @@
 - [x] Setup [access to create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#make-a-group-name-called-vpcadmins)
 - [x] Test your access to [create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#--now-test-with-the-following-command)
 
-- [x] Begin Terrform cloud infrastructure configurations [here](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/)
+- [x] Begin [Terraform](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/) cloud infrastructure configurations here
     - [ ] Setup VPN
     - [ ] Global authentication system for team logins
     - [ ] Setup DNS
