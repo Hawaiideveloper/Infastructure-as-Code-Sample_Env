@@ -36,3 +36,6 @@ The main.tf file will create a:
     public_ip = "52.24.174.0"
     ```
 
+#### However I see the future of this file looking huge and I would like to create a [.tvars extension file]()
+
+
