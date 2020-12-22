@@ -29,6 +29,8 @@ The main.tf file will create a:
 - [x] Elastic IP
 - [x] EC2-instance
     - [ ] Then when it is complete it prints the public IP to SSH into
+  
+  - example:
     ```
     Changes to Outputs:
     public_ip = "52.24.174.0"
