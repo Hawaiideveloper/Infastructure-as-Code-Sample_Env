@@ -25,7 +25,7 @@ The main.tf file will create a:
 - [x] Internet gateway
 - [x] Routing table
 - [x] Route table association
-- [x] Network acl
+- [x] Network Access Control List (acl)
 - [x] Elastic IP
 - [x] EC2-instance
 
