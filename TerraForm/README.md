@@ -36,12 +36,12 @@ The main.tf file will create a:
     public_ip = "52.24.174.0"
     ```
 
-#### However I see the future of this file looking huge and I would like to create a `.tvars extension file`
+#### However I see the future of this file looking huge and I would like to create a `.tfvars extension file`
 
 The file will be used for:
 
-- [x] [dev branch terraform.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/terraform.tfvars) (within production directory and inside of the dev branch)
-- [ ] staging branch terraform.tvars (hidden)
-- [ ] production branch terraform.tvars (hidden)
+- [x] [dev branch terraform.tfvars](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/terraform.tfvars) (within production directory and inside of the dev branch)
+- [ ] staging branch terraform.tfvars (hidden)
+- [ ] production branch terraform.tfvars (hidden)
 
 
