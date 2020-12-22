@@ -14,7 +14,7 @@
 
 ##### check your version
 
-#### Write a Terraform [configuration file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/configurations/example.tf) to launch 
+#### Write a Terraform [production configuration file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/configurations/example.tf) to launch 
 - [ ] EC2 inside of VPC
 
 
