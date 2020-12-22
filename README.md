@@ -10,15 +10,16 @@
 - [x] Test your access to [create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#--now-test-with-the-following-command)
 
 - [x] Setup / Configure [Terraform](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/) cloud infrastructure configuration file for production
-    - [ ] Setup VPN
-    - [ ] Global authentication system for team logins
-    - [ ] Setup DNS
-        [ ] Optional setup Dynamic tunnels for agent services
+    
    
 - [ ] Using Ansible
     - [ ] Setup Ansible
     - [ ] Configure Ansible
     - [ ] Test Ansible
+    - [ ] Setup VPN
+    - [ ] Global authentication system for team logins
+    - [ ] Setup DNS
+        [ ] Optional setup Dynamic tunnels for agent services
     - [ ] Deploy configuration and installation of applications listed below inside of EC2
         - [ ] Git
             - [ ] Getting started with Docker and its images
