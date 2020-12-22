@@ -40,7 +40,7 @@ The main.tf file will create a:
 
 The file will be used for:
 
-- [x] [dev branch terraform.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/terraform.tfvars) (within production directory)
+- [x] [dev branch terraform.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/terraform.tfvars) (within production directory and inside of the dev branch)
 - [ ] staging branch terraform.tvars (hidden)
 - [ ] production branch terraform.tvars (hidden)
 
