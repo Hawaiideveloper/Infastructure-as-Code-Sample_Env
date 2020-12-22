@@ -1,20 +1,5 @@
-# Terraform Getting started with EC2 and VPC
 
-
-#### Install Terraform to version v0.14.3 for the approriate system and verify its installation
-
-
-- [x] [MacOS](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/Installers/MacOS_TerraForm_Installer.sh)
-
-- [ ] [Ubuntu](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/Installers/Ubuntu_TerraForm_installer.sh)
-
-- [x] Setup auto complete if you want to short hand commands  by running this short script
-
-###### terraform -install-autocomplete
-
-##### check your version
-
-#### Write a Terraform [production configuration file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/main.tf) to launch 
+#### Terraform [production configuration file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/main.tf) to launch 
 
 The main.tf file will create a:
 
@@ -28,7 +13,7 @@ The main.tf file will create a:
 - [x] Network Access Control List (acl)
 - [x] Elastic IP
 - [x] EC2-instance
-    - [ ] Then when it is complete it prints the public IP to SSH into
+    - [x] Then when it is complete it prints the public IP to SSH into
   
   - example:
     ```
@@ -36,12 +21,10 @@ The main.tf file will create a:
     public_ip = "52.24.174.0"
     ```
 
-#### However I see the future of this file looking huge and I would like to create a [.tvars extension file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/dev.tvars)
+#### However I see the future of this file looking huge and I would like to create a `.tfvars extension file`
 
 The file will be used for:
 
-- [ ] [dev.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/dev.tvars) (within production directory)
-- [ ] staging.tvars (hidden)
-- [ ] production.tvars (hidden)
-
-
+- [x] [dev branch terraform.tfvars](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/terraform.tfvars) (within production directory and inside of the dev branch)
+- [ ] staging branch terraform.tfvars (hidden)
+- [ ] production branch terraform.tfvars (hidden)
