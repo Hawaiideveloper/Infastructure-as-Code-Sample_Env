@@ -36,11 +36,11 @@ The main.tf file will create a:
     public_ip = "52.24.174.0"
     ```
 
-#### However I see the future of this file looking huge and I would like to create a [.tvars extension file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/dev.tvars)
+#### However I see the future of this file looking huge and I would like to create a [.tvars extension file](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/terraform.tfvars)
 
 The file will be used for:
 
-- [ ] [dev.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/dev.tvars) (within production directory)
+- [ ] [terraform.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/dev.tvars) (within production directory)
 - [ ] staging.tvars (hidden)
 - [ ] production.tvars (hidden)
 
