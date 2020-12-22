@@ -3,5 +3,6 @@
 
 # I want to avoid the possibility of people seeing our states and files
 terraform.tfstate
+terraform.tfstate.backup
 
 .terraform
