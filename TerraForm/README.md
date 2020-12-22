@@ -14,7 +14,19 @@
 
 ##### check your version
 
-#### Write a Terraform [production configuration file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/configurations/example.tf) to launch 
-- [ ] EC2 inside of VPC
+#### Write a Terraform [production configuration file](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/main.tf) to launch 
+
+The main.tf file will create a:
+
+- [x] VPC
+- [x] Security Group
+- [x] Subnet
+- [x] Key-pair
+- [x] Internet gateway
+- [x] Routing table
+- [x] Route table association
+- [x] Network acl
+- [x] Elastic IP
+- [x] EC2-instance
 
 
