@@ -20,7 +20,7 @@ resource "aws_vpc" "production" {
 resource "aws_internet_gateway" "production" {
   vpc_id = aws_vpc.production.id
 
-    tags = {
+  tags = {
     Name = "Production"
   }
 }
@@ -29,11 +29,11 @@ resource "aws_internet_gateway" "production" {
 # Tagged with production
 
 resource "aws_subnet" "production" {
-  vpc_id = aws_vpc.production.id
-  cidr_block = "10.1.1.0/24"
+  vpc_id            = aws_vpc.production.id
+  cidr_block        = "10.1.1.0/24"
   availability_zone = "us-west-2a"
 
-    tags = {
+  tags = {
     Name = "Production"
   }
 }
@@ -45,7 +45,7 @@ resource "aws_subnet" "production" {
 resource "aws_route_table" "default" {
   vpc_id = aws_vpc.production.id
 
-    tags = {
+  tags = {
     Name = "Production"
   }
 
@@ -53,7 +53,7 @@ resource "aws_route_table" "default" {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.production.id
 
-     
+
 
   }
 }
@@ -132,11 +132,17 @@ resource "aws_eip" "webserver" {
   }
 
 }
+# The public ssh key can be changed frequently as needed
+variable "public_ssh_key" {
+   type = string
+   description = "Dev instances"
+  
+}
 
 # Then you need your pem aka ssh key
 resource "aws_key_pair" "you-have-a-pem-already" {
   key_name   = "halfaway"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDVndyPeI43/OIobZzipGyoBxIhUmZOul6Vb2uIytE//kGK/S7+Go1kiIF5KXEop5/MN+G/Ujkbw+eOO26p0uNdjBfR20UP+MT86+s8cDr9DNFGP0sBwz5xtw2P9b7AHpA+v50ZtgMD6K7tlLdIdI3937tfYbOQyhHC1nCLkaKjl/fowMUqqwNZgtfyZ6b7sqatCRUk1uwAAyBCsMEAvNMdiltCfTFLWLdLHosl01YCUIpZFrF1/UrsDiaPzaAqMYEOK+1TyRqAR/Ddd2f4/1EfLh4rauQbpB9ynp7LSLp489vQfNWlrLLq2X5l9UTWlKKdM96cz7R0GS0LlqYrCMuiyFKPqabrGhr71qTYQg229abl0z9BD59dHOf50EB/SHbJsn64b2PBaAbGKFnruBS/Dxkhtd8zzQNxqjJMEUUtkD4pmj70hV+fhlUpJIgMiHX4nYBBSPWnEJL8qH8IIeSZi/luBABh8AxDEcwflmSlyYzj7cFxNn55IuCXED+U1TkvynhEYhwTson3TX+bVZtRtb/3Uel8DoUOjuOSSwTUxtJptiW9GcihL+NUUUEC0eHlRvr14USTQVCy5wScU19o70xRDzhCMq45k+wKvUmFsDFDLkCQkLF96l0sCnkP2UVxkQvJ+BqYt9kHQXTKE4Suw6ZlqdUAmuavtlroGCUTMQ== hawaiideveloper@CoreyzMacBookPro"
+  public_key = var.public_ssh_key
 }
 
 # The EC2 instance we will need a data block does not create it fecthes
@@ -155,17 +161,22 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical creator themselves
 }
 
-# Create the EC2 instance
+# Create the EC2 instance (then look into the terraform.tfvars file)
+variable "dev_instance_type" {
+  type = string
+  description = "Dev instances"
+  }
+  
 
 resource "aws_instance" "webserver" {
   ami                    = data.aws_ami.ubuntu.id
   availability_zone      = "us-west-2a"
-  instance_type          = var.instance_type
+  instance_type          = var.dev_instance_type
   key_name               = aws_key_pair.you-have-a-pem-already.key_name
   vpc_security_group_ids = [aws_security_group.allow-all.id]
   subnet_id              = aws_subnet.production.id
 
-    tags = {
+  tags = {
     Name = "Production"
   }
 }
