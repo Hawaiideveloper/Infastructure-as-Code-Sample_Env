@@ -40,8 +40,8 @@ The main.tf file will create a:
 
 The file will be used for:
 
-dev.tvars
-staging.tvars
-production.tvars
+- [ ] dev.tvars (within production directory)
+- [ ] staging.tvars (hidden)
+- [ ] production.tvars (hidden)
 
 
