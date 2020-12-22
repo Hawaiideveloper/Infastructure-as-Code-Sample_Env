@@ -28,5 +28,11 @@ The main.tf file will create a:
 - [x] Network Access Control List (acl)
 - [x] Elastic IP
 - [x] EC2-instance
-
+    - [ ] Then when it is complete it prints the public IP to SSH 
+    ```
+    
+    Changes to Outputs:
+    public_ip = "52.24.174.0"
+    
+    ```
 
