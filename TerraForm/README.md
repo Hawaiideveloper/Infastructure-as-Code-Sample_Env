@@ -40,7 +40,7 @@ The main.tf file will create a:
 
 The file will be used for:
 
-- [ ] [dev.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/dev.tvars) (within production directory)
+- [ ] [dev.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/dev.tvars) (within production directory)
 - [ ] staging.tvars (hidden)
 - [ ] production.tvars (hidden)
 
