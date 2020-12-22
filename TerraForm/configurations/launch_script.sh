@@ -5,6 +5,12 @@ terraform fmt
 
 terraform init
 
-terraform validate
 
+
+# Create the infrastructure and prompt for yes
 terraform apply
+
+
+#Inspect the current state using 
+
+terraform show
