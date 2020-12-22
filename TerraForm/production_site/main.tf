@@ -110,6 +110,20 @@ resource "aws_security_group" "allow-all" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -145,10 +159,28 @@ resource "aws_key_pair" "you-have-a-pem-already" {
   public_key = var.public_ssh_key
 }
 
+
+
+
+
+
 # The EC2 instance we will need a data block does not create it fecthes
 data "aws_ami" "ubuntu" {
-  most_recent = true
+most_recent = true
 
+# https://cloud-images.ubuntu.com/locator/ec2/ 
+# The above link provides images ami-ids directly from ubuntu
+
+  filter {
+    name   = "image-id"
+    values = ["ami-0c007ac192ba0744b"]
+  }
+   owners = ["099720109477"] # Canonical creator themselves
+}
+
+
+  # use this to filter deeper if you ever decide keep up with a particular provider like Canonical
+/*
   filter {
     name   = "name"
     values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
@@ -160,6 +192,8 @@ data "aws_ami" "ubuntu" {
 
   owners = ["099720109477"] # Canonical creator themselves
 }
+
+*/
 
 # Create the EC2 instance (then look into the terraform.tfvars file)
 variable "dev_instance_type" {
