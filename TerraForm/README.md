@@ -28,7 +28,7 @@ The main.tf file will create a:
 - [x] Network Access Control List (acl)
 - [x] Elastic IP
 - [x] EC2-instance
-    - [ ] Then when it is complete it prints the public IP to SSH into
+    - [x] Then when it is complete it prints the public IP to SSH into
   
   - example:
     ```
@@ -40,8 +40,8 @@ The main.tf file will create a:
 
 The file will be used for:
 
-- [ ] [terraform.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/dev.tvars) (within production directory)
-- [ ] staging.tvars (hidden)
-- [ ] production.tvars (hidden)
+- [x] [dev branch terraform.tvars](https://github.com/Hawaiideveloper/Sample_Env/blob/main/TerraForm/production_site/dev.tvars) (within production directory)
+- [ ] staging branch terraform.tvars (hidden)
+- [ ] production branch terraform.tvars (hidden)
 
 
