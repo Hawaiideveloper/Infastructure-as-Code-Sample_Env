@@ -160,7 +160,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "webserver" {
   ami                    = data.aws_ami.ubuntu.id
   availability_zone      = "us-west-2a"
-  instance_type          = "t2.micro"
+  instance_type          = var.instance_type
   key_name               = aws_key_pair.you-have-a-pem-already.key_name
   vpc_security_group_ids = [aws_security_group.allow-all.id]
   subnet_id              = aws_subnet.production.id
