@@ -23,7 +23,7 @@ resource "aws_internet_gateway" "production" {
 
 # Then we provide a subnet (a place for it to live in)
 resource "aws_subnet" "production_subnet0" {
-  vpc_id = "${aws_vpc.production.id}"
+  vpc_id = "aws_vpc.production.id"
   cidr_block = "10.1.1.0/24"
   availability_zone = "us-west-2a"
 }
@@ -35,11 +35,11 @@ resource "aws_subnet" "production_subnet0" {
 resource "aws_route_table" "for_production_only" {
     vpc_id = aws_vpc.production.id
   
-  route = [ {
+  route   {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.production.id
     
-  } ]
+  } 
 }
 
 resource "aws_route_table_association" "production" {
@@ -74,7 +74,7 @@ resource "aws_network_acl" "allow-all" {
 resource "aws_security_group" "allow-all" {
     name = "clexys launchers and environment"
     description = "allows all traffic"
-    vpc_id = aws_vpc.production.vpc_id
+    vpc_id = aws_vpc.production.id
     
     ingress {
         from_port = 22
@@ -83,7 +83,7 @@ resource "aws_security_group" "allow-all" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 
-    egress =  {
+    egress  {
       from_port = 0
       to_port = 0
       protocol = "-1"
@@ -98,7 +98,7 @@ resource "aws_security_group" "allow-all" {
 resource "aws_eip" "webserver" {
     instance = aws_instance.webserver.id
     vpc = true
-    depends_on = ["aws_internet_gateway.production"]
+    depends_on = [aws_internet_gateway.production]
   
 }
 
