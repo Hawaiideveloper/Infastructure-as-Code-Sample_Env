@@ -34,7 +34,7 @@ This will create a universal system that can be transported to other cloud provi
 
 - [x] Use a [Terraform](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/) configuration file to standup a production environment
 
-- [ ] Test some [Bash scripts]() first as we need to ensure Ansible has the needed resources   
+- [ ] Test some [Bash scripts](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Bash_Helper_Scripts) first as we need to ensure Ansible has the needed resources   
    
 - [ ] Use [Ansible](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Ansible) to configure the previous environment that Terraform created
   
