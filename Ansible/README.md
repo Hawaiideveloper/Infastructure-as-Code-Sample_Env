@@ -13,7 +13,8 @@
 
 
 - [ ] Step 1: We need to attach S3 or EFS storage to our bare-metal(new ec2 instance) "no one wants to manually connect each time we spin up our Jenkins instance.  Plus S3 is accessible from external providers.
-          - [x] Option 1 is [S3FS](https://github.com/s3fs-fuse/s3fs-fuse)
+
+        - [x] Option 1 is [S3FS](https://github.com/s3fs-fuse/s3fs-fuse)
               - [x] Based on [S3 pricing](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch#simple-storage-s3) I am going with a slower model
 
 
