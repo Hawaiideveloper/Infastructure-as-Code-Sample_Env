@@ -115,7 +115,8 @@ Total tier cost = 2.7600 USD (S3 Standard storage cost)
 2.76 USD + 0.0004 USD + 0.005 USD + 0.084 USD + 0.24 USD = 3.09 USD (Total S3 Standard Storage, data requests, S3 select cost)
 S3 Standard cost (monthly): 3.09 USD
 
-
+###### $30.00 vs. $3.09 
+**I pick the slower option since this is going to be a "cheap" sample env**
 
 #### AWS CLI
 This is the Command Line interface to the AWS services
