@@ -211,7 +211,7 @@ resource "aws_instance" "webserver" {
   subnet_id              = aws_subnet.production.id
 
   tags = {
-    Name = "Production"
+    Name = "Clexys-Docker-Host"
   }
 }
 
