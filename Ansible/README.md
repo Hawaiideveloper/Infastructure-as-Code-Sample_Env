@@ -1,32 +1,40 @@
-# Ansible considerations
+# Ansible plan
 
-  - [ ] Setup Ansible
+
+
+## Ansible --> Docker ---> Jenkins
+*Setup our new Jenkins server with Ansible by pulling down a docker Jenkins container*
+
+
+### Get our storage working then use Ansible to connect it
+
+- [ ] Prerequistes are to give our account permissions to read/write/execute S3 buckets operations
+
+
+- [ ] Step 1: We need to attach S3 or EFS storage to our bare-metal(new ec2 instance) "no one wants to manually and constantly connect each time we spin up our Jenkins instance.
+      - [ ] Option 1 is [S3FS](https://github.com/s3fs-fuse/s3fs-fuse)
+      - [ ] Option 2 is [RioFS](https://github.com/skoobe/riofs) "renaming is a no go 12-23-2020 tested"
+      - [ ] Option 3 is [EFS](https://aws.amazon.com/efs/faq/)
+
+
+
+
+
+### Setup Ansible to configure our Jenkins instance 
+    - [ ] Setup Ansible 
     - [ ] Configure Ansible
-    - [ ] Test Ansible
-    - [ ] Configure an EC2 instance with local Ansible:
-          - [ ] Add a reusable Highly Available (HA) Storage solution to the new EC2 that will later be **Jenkins**
-            - [ ] Install Docker 
-            - [ ] Start the Engine
-            - [ ] Connect the Container storage
-                - [ ] Pull down a Jenkins docker container and connect it to the HA storage
+      - [ ] Setup [playbook(s) & roles]() 
+        - [ ] Install Git 
+        - [ ] Install Docker
+        - [ ] Then connect Github to a team Jenkins account   
+        - [ ] Connect **HA**  Storage solution to the EC2 that was created with [Terraform](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/main/TerraForm/production_site/main.tf)
+ 
 
 
 
 
 
 
-- re-usable resources like:
-  - Storage
-  - Execution
-  - Logs
-
-
-
-### Setup our new Jenkins server with Ansible
-- [ ] Step 1: We need to attach storage to our bare-metal(new ec2 instance) "no one wants to manually write a script to constantly connect each time we spin up our Jenkins instance.
-- [ ] Step 2: Ensure no human interaction is needed once the ec2 is launched except to logon to the instance by installing docker on the ec2 instance
-- [ ] Step 3: Describe a storage volume for docker to place our images into
-- [ ] Step 3: Show the screen shot in a pull request (PR) and then move on to docker
 
 
 
