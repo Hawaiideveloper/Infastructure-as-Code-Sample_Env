@@ -104,6 +104,7 @@ resource "aws_security_group" "allow-all" {
   }
 
   ingress {
+     description = "Allow ssh"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -111,17 +112,31 @@ resource "aws_security_group" "allow-all" {
   }
 
   ingress {
+    description = "Serve websites"
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+
 ingress {
+    description = "Serve secure websites"
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+
+/*
+    ingress {
+    description = "Jenkins site"
+    from_port   = 8080
+    to_port     = 8080
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+*/
+
   }
 
   egress {
@@ -130,6 +145,8 @@ ingress {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  
+
 }
 
 # Elastic IP
@@ -158,11 +175,6 @@ resource "aws_key_pair" "you-have-a-pem-already" {
   key_name   = "halfaway"
   public_key = var.public_ssh_key
 }
-
-
-
-
-
 
 # The EC2 instance we will need a data block does not create it fecthes
 data "aws_ami" "ubuntu" {
