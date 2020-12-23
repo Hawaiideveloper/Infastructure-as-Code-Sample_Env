@@ -84,6 +84,10 @@ This will create a universal system that can be transported to other cloud provi
 Because we all know the lifecycle of infrastructure is short and many derecation will happen after I write this repo in full.  Therefore to save time, it is 
 best to build a system that allows growth.  But it is lengthy to login each time and perform an action via web/GUI.  However in the event things get compromised, or we loose a system due to its integrity or reliability.  You will need to be authenticated properly to manage AWS services. 
 
+##### Don't forget to change your keys every 30 days
+
+###### How to [rotate keys via CLI](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey_CLIAPI) "Scroll down half way in the page"
+
 
 #### Pricing
 
