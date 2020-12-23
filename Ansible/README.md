@@ -9,7 +9,7 @@
 ### Get our storage working then use Ansible to connect it
 
 - [ ] Prerequistes are to give our account permissions to read/write/execute S3 buckets operations
-- [ ] Then automate it with bash and use Ansible to run the shell script later it will need access to your keys.  I recommend [rotating them monthly using the CLI]()
+- [ ] Then automate it with bash and use Ansible to run the shell script later it will need access to your keys.  I recommend [rotating them monthly using the CLI](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch#how-to-rotate-keys-via-cli-scroll-down-half-way-in-the-page)
 
 
 - [ ] Step 1: We need to attach S3 or EFS storage to our bare-metal(new ec2 instance) "no one wants to manually connect each time we spin up our Jenkins instance.  Plus S3 is accessible from external providers.  

@@ -86,7 +86,7 @@ best to build a system that allows growth.  But it is lengthy to login each time
 
 ##### Don't forget to change your keys every 30 days
 
-###### How to [rotate keys via CLI](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey_CLIAPI) "Scroll down half way in the page"
+###### How to [rotate keys via CLI](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey_CLIAPI) "Scroll down half way in the page after you click the link"
 
 
 #### Pricing
