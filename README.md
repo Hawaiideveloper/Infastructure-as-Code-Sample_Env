@@ -3,8 +3,8 @@
 
 #### *Note: Please use the [dev_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/dev_branch) if you are actively building with this document.  As the dev_branch will have the nightly builds.  The [main_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/main) is the stable branch; but it will lack all current updates .*
 
-#### Why?
-Because if we don't practice our complete disaster recovery skills they will get old and we will possibility need them to recover our life's work.  Not too mention people will probably make [human errors](https://en.wikipedia.org/wiki/Human_error#:~:text=Human%20error%20refers%20to%20something,system%20outside%20its%20acceptable%20limits%22.)  Nothing is worse than getting a 2am call and having to perform a task while half asleep.
+#### Why create this?
+Because if we don't have our IaC we will spend all of our time building and have no time to actually create products that our present and future customers want.  I is good to practice our complete disaster recovery skills as well as enrich our CI/CD so our skills stay fresh and our environment is easy to operate.  However environments will get old and we will possibility need them to recover our life's work.  Not too mention people will probably make [human errors](https://en.wikipedia.org/wiki/Human_error#:~:text=Human%20error%20refers%20to%20something,system%20outside%20its%20acceptable%20limits%22.)  Nothing is worse than getting a 2am call and having to perform a task while half asleep.
 
 #### What will this do?
 This will create a universal system that can be transported to other cloud providers using agonistic tools.  It starts with AWS and will later integrate with other providers like:
@@ -118,3 +118,6 @@ It is difficult to know what your customers or bosses want without a plan, there
 #### Create Cloud AWS Diagrams
 [Cloudcraft](https://www.cloudcraft.co/?utm_source=terraform-aws-vpc)
 
+### About me:
+
+[Click Here for more information about me](https://hawaiideveloper.github.io/) 
