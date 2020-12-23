@@ -28,3 +28,4 @@ The file will be used for:
 - [x] [dev branch terraform.tfvars](https://github.com/Hawaiideveloper/Sample_Env/blob/dev_branch/TerraForm/production_site/terraform.tfvars) (within production directory and inside of the dev branch)
 - [ ] staging branch terraform.tfvars (hidden)
 - [ ] production branch terraform.tfvars (hidden)
+

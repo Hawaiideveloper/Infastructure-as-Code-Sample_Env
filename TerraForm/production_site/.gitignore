@@ -1,5 +1,7 @@
+.terraform
+.terraform.lock.hcl
 
-
+terraform-provider-aws_v3.22.0_x5
 
 # I want to avoid the possibility of people seeing our states and files
 terraform.tfstate
