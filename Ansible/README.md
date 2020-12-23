@@ -12,7 +12,8 @@
 
 
 - [ ] Step 1: We need to attach S3 or EFS storage to our bare-metal(new ec2 instance) "no one wants to manually and constantly connect each time we spin up our Jenkins instance.
-      - [ ] Option 1 is [S3FS](https://github.com/s3fs-fuse/s3fs-fuse)
+      - [x] Option 1 is [S3FS](https://github.com/s3fs-fuse/s3fs-fuse)
+          - [x] Based on [S3 pricing](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch#simple-storage-s3) I am going with a slower model
       - [ ] Option 2 is [RioFS](https://github.com/skoobe/riofs) "renaming is a no go 12-23-2020 tested"
       - [ ] Option 3 is [EFS](https://aws.amazon.com/efs/faq/)
 
