@@ -12,11 +12,10 @@
 - [ ] Then automate it with bash and use Ansible to run the shell script later it will need access to your keys.  I recommend [rotating them monthly using the CLI]()
 
 
-- [ ] Step 1: We need to attach S3 or EFS storage to our bare-metal(new ec2 instance) "no one wants to manually connect each time we spin up our Jenkins instance.  Plus S3 is accessible from external providers.
-
+- [ ] Step 1: We need to attach S3 or EFS storage to our bare-metal(new ec2 instance) "no one wants to manually connect each time we spin up our Jenkins instance.  Plus S3 is accessible from external providers.  
+  
         - [x] Option 1 is [S3FS](https://github.com/s3fs-fuse/s3fs-fuse)
-              - [x] Based on [S3 pricing](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch#simple-storage-s3) I am going with a slower model
-
+          - [ ] Based on [S3 pricing](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch#simple-storage-s3) I am going with a slower model
 
           - [ ] Option 2 is [RioFS](https://github.com/skoobe/riofs) "renaming is a no go 12-23-2020 tested"
       - [ ] Option 3 is [EFS](https://aws.amazon.com/efs/faq/)
