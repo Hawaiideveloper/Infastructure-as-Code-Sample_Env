@@ -2,6 +2,10 @@
 
 ### Steps needed to create a cloud based environment with security and VPN
 
+#### *Note: Please use the [dev_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/dev_branch) if you are actively building with this document.  As the dev_branch will have the nightly builds.  The [main_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/main) is the stable, yet behind in time.*
+
+
+
 - [x] Create [AWS auth keys](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#step-5-add-user)
 - [x] Add User to [Admin Group](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#make-a-group-name-called-admins)
 - [x] Install the [AWS CLI](https://github.com/Hawaiideveloper/Sample_Env/blob/main/AWS_CLI/AWS_CLI_installer.sh)
