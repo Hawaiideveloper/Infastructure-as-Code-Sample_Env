@@ -35,10 +35,12 @@ This will create a universal system that can be transported to other cloud provi
 - [x] Use a [Terraform](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/) configuration file to standup a production environment
     
    
-- [ ] Use Ansible to configure the previous environment that Terraform created
-    - [ ] Setup Ansible
-    - [ ] Configure Ansible
-    - [ ] Test Ansible
+- [ ] Use [Ansible]() to configure the previous environment that Terraform created
+  
+        
+
+
+
     - [ ] Setup VPN
     - [ ] Global authentication system for team logins
     - [ ] Setup DNS
