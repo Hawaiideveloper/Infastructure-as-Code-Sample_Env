@@ -87,7 +87,7 @@ best to build a system that allows growth.  But it is lengthy to login each time
 
 #### Pricing
 
-- [Amazon's Elastic File System (EFS)](https://aws.amazon.com/efs/pricing/)
+##### [Amazon's Elastic File System (EFS)](https://aws.amazon.com/efs/pricing/)
     - Within your first 12 months on AWS, you can use up to 5 GB/month on the EFS Standard storage class for free.
 
 Assume your file system is located in the US East (N. Virginia) region, uses 100 GB of EFS Standard storage, and uses 400 GB of EFS Infrequent Access storage for the entirety of a 31 day month. At the end of the month, you would have the following usage in GB-Hours:
@@ -99,7 +99,7 @@ Total EFS Standard storage charge: 74,400 GB-Hours x (1 month / 744 hours) x $0.
 Total EFS IA storage charge: 297,600 GB-Hours x (1 month / 744 hours) x $0.025/GB-month = $10.00
 Total Monthly Storage Charge: $30.00 + $10.00 = $40.00 or $.08/GB-month
 
-- [Simple storage (S3)](https://aws.amazon.com/s3/pricing/?sc_channel=ps&sc_campaign=acq_LATAMO&sc_publisher=google&sc_category=storage&sc_country=LATAMO&sc_geo=LATAM&sc_outcome=acq&sc_detail=amazon%20s3%20pricing&sc_content=S3_e&sc_matchtype=e&sc_segment=453309460993&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Storage|Product|LATAMO|EN|Sitelink&s_kwcid=AL!4422!3!453309460993!e!!g!!amazon%20s3%20pricing&ef_id=CjwKCAiA8ov_BRAoEiwAOZogwdXKGR915L2mtiu30jLfTsAJOb9-ERFCWsq-yoAcn0mUVTgm8rznKhoCQkMQAvD_BwE:G:s&s_kwcid=AL!4422!3!453309460993!e!!g!!amazon%20s3%20pricing)
+##### [Simple storage (S3)](https://aws.amazon.com/s3/pricing/?sc_channel=ps&sc_campaign=acq_LATAMO&sc_publisher=google&sc_category=storage&sc_country=LATAMO&sc_geo=LATAM&sc_outcome=acq&sc_detail=amazon%20s3%20pricing&sc_content=S3_e&sc_matchtype=e&sc_segment=453309460993&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Storage|Product|LATAMO|EN|Sitelink&s_kwcid=AL!4422!3!453309460993!e!!g!!amazon%20s3%20pricing&ef_id=CjwKCAiA8ov_BRAoEiwAOZogwdXKGR915L2mtiu30jLfTsAJOb9-ERFCWsq-yoAcn0mUVTgm8rznKhoCQkMQAvD_BwE:G:s&s_kwcid=AL!4422!3!453309460993!e!!g!!amazon%20s3%20pricing)
 
 Tiered price for: 120 GB
 120 GB x 0.0230000000 USD = 2.76 USD
