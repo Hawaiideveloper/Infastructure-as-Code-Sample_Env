@@ -1,9 +1,30 @@
-# Sample_Env
+# Automated Infrastructure as Code (IaC) Sample_Environment for public Clouds
 
-### Steps needed to create a cloud based environment with security and VPN
 
-#### *Note: Please use the [dev_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/dev_branch) if you are actively building with this document.  As the dev_branch will have the nightly builds.  The [main_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/main) is the stable, yet behind in time.*
+#### *Note: Please use the [dev_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/dev_branch) if you are actively building with this document.  As the dev_branch will have the nightly builds.  The [main_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/main) is the stable branch; but it will lack all current updates .*
 
+#### Why?
+Because if we don't practice our complete disaster recovery skills they will get old and we will possibility need them to recover our life's work.  Not too mention people will probably make [human errors](https://en.wikipedia.org/wiki/Human_error#:~:text=Human%20error%20refers%20to%20something,system%20outside%20its%20acceptable%20limits%22.)  Nothing is worse than getting a 2am call and having to perform a task while half asleep.
+
+#### What will this do?
+This will create a universal system that can be transported to other cloud providers using agonistic tools.  It starts with AWS and will later integrate with other providers like:
+- Google cloud compute (GCP)
+- Microsoft Azure
+- Oracle cloud
+- Digital Ocean
+
+
+## Disclaimer:
+> *Use of this repo constitutes your willingness and liability to read and make your own decisions.  This repo is for educational experimental use only.  Therefore all liability, or legal matters are forfeited by both the reader and writer for this walkthrough and all of its documentation provides no guarantee of services and/or content may change without notice.  Neither AlcoTerra, Halfawayservices or any company that Corey Albright works with or for or afterwards constitues an agreement or liability to access such systems or any liability.*  For this tutorial the author assumes the use will be using a MacOS device as that is the authors preferred system.  It is recommended that the user find(s) equivelent systems like Linux or have access to a terminal based system like Windows Subsystem for Linux.  To proceed with the documentation.
+
+
+
+
+
+
+## Amazon Section
+
+### Steps needed to create a cloud based environment with security and VPN in Amazon Web Services (AWS) that **can be easily migrated to other clouds with agonostic tools** 
 
 
 - [x] Create [AWS auth keys](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#step-5-add-user)
@@ -67,6 +88,10 @@ best to build a system that allows growth.  But it is lengthy to login each time
 #### AWS CLI
 This is the Command Line interface to the AWS services
 
+
+## Google cloud compute (GCP) Section
+
+- Not complete will be created at a later date
 
 #### Git 
 This is great for versioning and helps you to track both changes and assist you in creating tests that can be staged and then later moved to production.  The rules are simple, each time you make a change to production, you need to overwrite the test environment, and staging environment with new Git commits.
