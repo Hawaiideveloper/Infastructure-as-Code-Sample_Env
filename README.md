@@ -31,6 +31,15 @@ This will create a universal system that can be transported to other cloud provi
 - [x] Test your [AWS CLI](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#step-6-test-aws-cli)
 - [x] Setup [access to create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#make-a-group-name-called-vpcadmins)
 - [x] Test your access to [create VPCs](https://github.com/Hawaiideveloper/Sample_Env/blob/main/Credentials_setup/Getting_Started_Step_1_after_README_AWS_Keys.md#--now-test-with-the-following-command)
+- [x] Give your account S3 permissions
+    - [x] Go to IAM
+    - [x] Select your User
+    - [x] Click Add permissions
+    - [x] Create group
+    - [x] Name the group S3Admins
+    - [x] Search from AmazonS3FullAccess and select it
+    - [x] Review
+    - [x] Add Permisisons
 
 - [x] Use a [Terraform](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/) configuration file to standup a production environment
 
