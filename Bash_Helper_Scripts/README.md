@@ -22,4 +22,7 @@ With access keys from AWSCLI and Jenkins we can test everything quickly and can 
 
 ## Scripts are below:
 
-[mount s3 as volume within any bash filesystem instance or ]()
+
+[create s3 bucket in ubuntu](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/dev_branch/Bash_Helper_Scripts/create_s3_bucket.sh)
+
+[mount s3 as volume as a mount point within Ubuntu](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/dev_branch/Bash_Helper_Scripts/mount_s3.sh)
