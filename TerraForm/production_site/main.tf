@@ -166,7 +166,7 @@ ingress {
   }
   
 
-}
+
 
 # Elastic IP
 # SSH Key
