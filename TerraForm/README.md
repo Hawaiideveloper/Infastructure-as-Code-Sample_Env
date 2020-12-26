@@ -21,6 +21,20 @@ The main.tf file will create a:
     public_ip = "52.24.174.0"
     ```
 
+
+#### Terraform most useful [commands](https://www.terraform.io/docs/commands/index.html) below:
+
+
+[terraform fmt](https://www.terraform.io/docs/commands/fmt.html) Use this command to format your terraform configuration file
+
+[terraform init](https://www.terraform.io/docs/commands/init.html) Without this command nothing will start, you need to initialize the terraform before you issue any commands
+
+[terraform plan](https://www.terraform.io/docs/commands/plan.html) This command will allow you to see the set of changes before you execute any configuration changes
+
+[terraform apply](https://www.terraform.io/docs/commands/apply.html) This is the creation command that will build the infrastructure so that it is usable.
+
+[terraform destroy](https://www.terraform.io/docs/commands/destroy.html) Use this to remove and delete all resources created by Terraform
+
 #### However I see the future of this file looking huge and I would like to create a `.tfvars extension file`
 
 The file will be used for:
