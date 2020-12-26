@@ -104,17 +104,18 @@ resource "aws_security_group" "allow-all" {
   }
 
   ingress {
-     description = "Allow ssh"
+    description = "Allow ssh"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
- }
+
+
 
   ingress {
-     description = "Allow Jenkins"
+    description = "Allow Jenkins"
     from_port   = 8080
     to_port     = 8080
     protocol    = "tcp"
@@ -130,23 +131,23 @@ resource "aws_security_group" "allow-all" {
   }
 
 
-ingress {
+  ingress {
     description = "Serve secure websites"
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-}
+  }
 
-ingress {
+  ingress {
     description = "Serve Dev websites"
     from_port   = 3000
     to_port     = 3000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-}
+  }
 
-/*
+  /*
     ingress {
     description = "Jenkins site"
     from_port   = 8080
@@ -164,8 +165,8 @@ ingress {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-  
 
+}
 
 
 # Elastic IP
@@ -184,9 +185,9 @@ resource "aws_eip" "webserver" {
 }
 # The public ssh key can be changed frequently as needed
 variable "public_ssh_key" {
-   type = string
-   description = "Dev instances"
-  
+  type        = string
+  description = "Dev instances"
+
 }
 
 # Then you need your pem aka ssh key
@@ -197,20 +198,20 @@ resource "aws_key_pair" "you-have-a-pem-already" {
 
 # The EC2 instance we will need a data block does not create it fecthes
 data "aws_ami" "ubuntu" {
-most_recent = true
+  most_recent = true
 
-# https://cloud-images.ubuntu.com/locator/ec2/ 
-# The above link provides images ami-ids directly from ubuntu
+  # https://cloud-images.ubuntu.com/locator/ec2/ 
+  # The above link provides images ami-ids directly from ubuntu
 
   filter {
     name   = "image-id"
     values = ["ami-0c007ac192ba0744b"]
   }
-   owners = ["099720109477"] # Canonical creator themselves
+  owners = ["099720109477"] # Canonical creator themselves
 }
 
 
-  # use this to filter deeper if you ever decide keep up with a particular provider like Canonical
+# use this to filter deeper if you ever decide keep up with a particular provider like Canonical
 /*
   filter {
     name   = "name"
@@ -228,10 +229,10 @@ most_recent = true
 
 # Create the EC2 instance (then look into the terraform.tfvars file)
 variable "dev_instance_type" {
-  type = string
+  type        = string
   description = "Dev instances"
-  }
-  
+}
+
 
 resource "aws_instance" "webserver" {
   ami                    = data.aws_ami.ubuntu.id
