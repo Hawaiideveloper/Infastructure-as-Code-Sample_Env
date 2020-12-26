@@ -24,6 +24,7 @@ three.example.com
 
 ##### Sample *yml* file
 
+```
 all:
   hosts:
     mail.example.com:
@@ -37,6 +38,7 @@ all:
         one.example.com:
         two.example.com:
         three.example.com:
+```
 
 ## [Docker Playbook]() Use this to install docker using Ansible
   - [What is Docker](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Docker)
