@@ -1,9 +1,104 @@
 # Ansible plan
 
 
+sample play syntax to install Docker via Ansible:
+*ansible-playbook -l Docker  -i host.ini -u ubuntu playbook.yml*
+
+#### Check the host file's entries 
+*The host file is in the same dir as the playbook not the default location of /etc/ansible/host.ini*:
+
+##### ansible {host-pattern} -i /path/of/inventory/file --list-hosts
+- *example*
+```ansible Docker -i host.ini -m ping --list-hosts```
+
+
+#### Connection Tests:
+
+From your local machine or Ansible control node, run:
+
+```ansible all -m ping -u remote_user```
+
+
+
+
+### There are a few playbooks
+
+
+### First you need an inventory file
+  [inventory files help Ansible know where to execute the playbooks](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
+
+*The inventory file can be in one of many formats *([ini](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Ansible#sample-file-ini-below) & [yml](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Ansible#sample-yml-file))*, depending on the inventory plugins you have. The most common formats are INI and YAML. A basic INI /etc/ansible/hosts might look like this*
+
+##### Sample File *ini* below
+```
+mail.example.com
+
+[webservers]
+foo.example.com
+bar.example.com
+
+[dbservers]
+one.example.com
+two.example.com
+three.example.com
+```
+---
+
+##### Sample *yml* file
+
+```
+all:
+  hosts:
+    mail.example.com:
+  children:
+    webservers:
+      hosts:
+        foo.example.com:
+        bar.example.com:
+    dbservers:
+      hosts:
+        one.example.com:
+        two.example.com:
+        three.example.com:
+```
+
+## [Docker Playbook]() Use this to install docker using Ansible
+  - [What is Docker](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Docker)
+
+---
+#### Storage playbook
+
+##### Task connect storage
+
 
 ## Ansible --> Docker ---> Jenkins
 *Setup our new Jenkins server with Ansible by pulling down a docker Jenkins container*
+
+
+## Setup Docker on Ubuntu
+
+##### Running this playbook will perform the following actions on your Ansible hosts:
+- [ ] Install aptitude, which is preferred by Ansible as an alternative to the apt package manager.
+
+- [ ] Install the required system packages.
+
+- [ ] Install the Docker GPG APT key.
+
+
+- [ ] Add the official Docker repository to the apt sources.
+
+
+- [ ] Install Docker
+
+
+- [ ] Install the Python Docker module via pip.
+
+
+- [ ] Pull the default image specified by default_container_image from Docker Hub.
+
+
+- [ ] Create the number of containers defined by the create_containers variable, each using the image defined by default_container_image, and execute the command defined in default_container_command in each new container.
+
 
 
 ### Get our storage working then use Ansible to connect it
