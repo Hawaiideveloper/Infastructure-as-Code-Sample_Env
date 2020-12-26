@@ -21,6 +21,7 @@ one.example.com
 two.example.com
 three.example.com
 ```
+---
 
 ##### Sample *yml* file
 
