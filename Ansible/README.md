@@ -6,7 +6,7 @@
 ### First you need an inventory file
   [inventory files help Ansible know where to execute the playbooks](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
 
-*The inventory file can be in one of many formats *(ini & yml)*, depending on the inventory plugins you have. The most common formats are INI and YAML. A basic INI /etc/ansible/hosts might look like this*
+*The inventory file can be in one of many formats *([ini](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Ansible#sample-file-ini-below) & [yml](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Ansible#sample-yml-file))*, depending on the inventory plugins you have. The most common formats are INI and YAML. A basic INI /etc/ansible/hosts might look like this*
 
 ##### Sample File *ini* below
 ```
