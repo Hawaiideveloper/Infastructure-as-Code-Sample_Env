@@ -43,37 +43,48 @@ This will create a universal system that can be transported to other cloud provi
 
 - [x] Use a [Terraform](https://github.com/Hawaiideveloper/Sample_Env/tree/main/TerraForm/) configuration file to standup a production environment
 
-- [ ] Test some [Bash scripts](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Bash_Helper_Scripts) first as we need to ensure Ansible has the needed resources   
+- [x] Test some [Bash scripts](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Bash_Helper_Scripts) first as we need to ensure Ansible has the needed resources   
    
-- [ ] Use [Ansible](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Ansible) to configure the previous environment that Terraform created
+- [x] Use [Ansible](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Ansible) to configure the previous environment that Terraform created
   
-- [ ] Docker
-    - [ ] Setup Domain Name Server (DNS) container
+
+### Migrations of VMs to Containers
+- [x] Docker
+    - [x] Getting started with Docker and its images
+- [x] Migrate Web server to a new container
+- [ ] Build Jenkins image
+- [ ] Migrate MongoDB documents to new MongoDB container
+ - [ ] Setup Domain Name Server (DNS) container
     - [ ] Setup Simple Mail Transport Protocol (SMTP) server
     - [ ] Setup Virtual Private Network (VPN)
     - [ ] Global LDAP/PAM authentication system for team logins
     - [ ] Optional setup Dynamic tunnels for agent services
-    - [ ] Deploy configuration and installation of applications listed below inside of EC2
     - [ ] Bonus 
       - [ ] Setup Asterisk server to call us 
-        
-            - [ ] Getting started with Docker and its images
-            - [ ] Build Jenkins image
+
+### Jenkins within Container
+- [ ] Build Jenkins image
             - [ ] Using Jenkins
                 - [ ] Setup Jenkins into container
                 - [ ] Deploy KanBoard container object
                 - [ ] Deploy NodeJS App container
                 - [ ] Create a website container
-        - [ ] Getting started with Kubernetes
+
+
+   
+        
+          
+            
+
+
+- [ ] Getting started with Kubernetes
             - [ ] Setup and Install
             - [ ] Management of containers and review dashboard
             - [ ] Setup load balancer
             - [ ] Spin-up and turn down of containers
       
         
-### Migrations of VMs to Containers
-- [ ] Migrate Web server to a new container
-- [ ] Migrate MongoDB documents to new MongoDB container
+
     
     
 
