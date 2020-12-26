@@ -6,6 +6,32 @@
 *Setup our new Jenkins server with Ansible by pulling down a docker Jenkins container*
 
 
+## Setup Docker on Ubuntu
+
+##### Running this playbook will perform the following actions on your Ansible hosts:
+- [ ] Install aptitude, which is preferred by Ansible as an alternative to the apt package manager.
+
+- [ ] Install the required system packages.
+
+- [ ] Install the Docker GPG APT key.
+
+
+- [ ] Add the official Docker repository to the apt sources.
+
+
+- [ ] Install Docker
+
+
+- [ ] Install the Python Docker module via pip.
+
+
+- [ ] Pull the default image specified by default_container_image from Docker Hub.
+
+
+- [ ] Create the number of containers defined by the create_containers variable, each using the image defined by default_container_image, and execute the command defined in default_container_command in each new container.
+
+
+
 ### Get our storage working then use Ansible to connect it
 
 - [ ] Prerequistes are to give our account permissions to read/write/execute S3 buckets operations
