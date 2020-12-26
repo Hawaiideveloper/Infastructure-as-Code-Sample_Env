@@ -1,6 +1,9 @@
 # Ansible plan
 
 
+sample play syntax to install Docker via Ansible:
+*ansible-playbook -l Docker  -i host.ini -u ubuntu playbook.yml*
+
 #### Check the host file's entries 
 *The host file is in the same dir as the playbook not the default location of /etc/ansible/host.ini*:
 
