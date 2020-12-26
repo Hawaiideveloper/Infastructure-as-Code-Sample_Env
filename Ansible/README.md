@@ -13,7 +13,7 @@
 
 From your local machine or Ansible control node, run:
 
-ansible all -m ping -u remote_user
+```ansible all -m ping -u remote_user```
 
 
 
