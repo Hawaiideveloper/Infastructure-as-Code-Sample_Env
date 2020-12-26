@@ -29,3 +29,4 @@ The file will be used for:
 - [ ] staging branch terraform.tfvars (hidden)
 - [ ] production branch terraform.tfvars (hidden)
 
+I have included many ingress ports in this configuration, however I will at some point seperate the ports; but because this is a Dev site it has no important information nor does it bear confidential / sensitive information
