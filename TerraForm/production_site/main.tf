@@ -111,6 +111,16 @@ resource "aws_security_group" "allow-all" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+ }
+
+  ingress {
+     description = "Allow Jenkins"
+    from_port   = 8080
+    to_port     = 8080
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   ingress {
     description = "Serve websites"
     from_port   = 80
