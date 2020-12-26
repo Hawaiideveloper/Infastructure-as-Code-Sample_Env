@@ -11,6 +11,8 @@ A docker container can launch itself faster than a normal VM with minimum servic
 - Database
 - etc.
 
+---
+
 ### We will use Docker to serve our content's static website
 
 
