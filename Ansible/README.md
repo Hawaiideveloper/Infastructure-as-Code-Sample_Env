@@ -1,5 +1,23 @@
 # Ansible plan
 
+
+#### Check the host file's entries 
+*The host file is in the same dir as the playbook not the default location of /etc/ansible/host.ini*:
+
+##### ansible {host-pattern} -i /path/of/inventory/file --list-hosts
+- *example*
+```ansible Docker -i host.ini -m ping --list-hosts```
+
+
+#### Connection Tests:
+
+From your local machine or Ansible control node, run:
+
+ansible all -m ping -u remote_user
+
+
+
+
 ### There are a few playbooks
 
 
