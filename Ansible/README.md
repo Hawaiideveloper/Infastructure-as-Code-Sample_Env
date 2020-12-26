@@ -2,6 +2,42 @@
 
 ### There are a few playbooks
 
+
+### First you need an inventory file
+  [inventory files help Ansible know where to execute the playbooks](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
+
+*The inventory file can be in one of many formats *(ini & yml)*, depending on the inventory plugins you have. The most common formats are INI and YAML. A basic INI /etc/ansible/hosts might look like this*
+
+##### Sample File *ini* below
+```
+mail.example.com
+
+[webservers]
+foo.example.com
+bar.example.com
+
+[dbservers]
+one.example.com
+two.example.com
+three.example.com
+```
+
+##### Sample *yml* file
+
+all:
+  hosts:
+    mail.example.com:
+  children:
+    webservers:
+      hosts:
+        foo.example.com:
+        bar.example.com:
+    dbservers:
+      hosts:
+        one.example.com:
+        two.example.com:
+        three.example.com:
+
 ## [Docker Playbook]() Use this to install docker using Ansible
   - [What is Docker](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Docker)
 
