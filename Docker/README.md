@@ -2,19 +2,16 @@
 
 Docker is used to launch a lightweight microservice that "usually" performs one critical service.  Usually you want to use Docker to do such a microservice like:
 
+
+A docker container can launch itself faster than a normal VM with minimum services.  I have taken the time to write down some key commands like:
+
 - Mail (SMTP) Service
 - DNS Service
 - Website
 - Database
 - etc.
 
-
-
-# Docker has some internal commands here and we will not be covering them all that at not directly related to our work.
-
-
-
-### The first thing here is to serve our content's static website
+### We will use Docker to serve our content's static website
 
 
 - [ ] Start the Engine with Ansible
@@ -26,7 +23,9 @@ Docker is used to launch a lightweight microservice that "usually" performs one 
 
 
 
-A docker container can launch itself faster than a normal VM with minimum services.  I have taken the time to write down some key commands like:
+# Docker has some internal commands here and we will not be covering them all that is not directly related to our work.
+
+
 
 #### [docker-machine start "docker host"](https://docs.docker.com/machine/get-started/) start your docker host.
 
