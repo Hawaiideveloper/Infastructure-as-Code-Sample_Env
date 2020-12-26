@@ -10,10 +10,9 @@ A docker container can launch itself faster than a normal VM with minimum servic
 - Website
 - Database
 - etc.
-
 ---
 
-### We will use Docker to serve our content's static website
+# We will use Docker to serve our content's static website
 
 
 - [ ] Start the Engine with Ansible
