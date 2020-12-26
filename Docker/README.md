@@ -1,13 +1,12 @@
-* I was going to migrate today from the current production blusky7 but then I realized, I would end up with two environments and could potentially end up paying for the resources that terraform created.
+## Some valuable Docker notes:
 
-* However the plan would now be:
-* Make note of the current configurations and match them with what I have in Terraform
-* Then delete all resources that would result in a duplicate 
-* Once all is removed that would present a duplicated entry
-* I would then delete all default things in a region.  Then launch the terraform configuration.
+Docker is used to launch a lightweight microservice that "usually" performs one critical service.  Usually you want to use Docker to do such a microservice like:
 
-#### And allow docker to run the website 
-- Finally create another container and move the DB to that one
+- Mail (SMTP) Service
+- DNS Service
+- Website
+- Database
+- etc.
 
 
 
@@ -26,16 +25,6 @@
 - [ ] Create an Apache_Site that will repeatedly pull the production site and its latest code continously and allow users to change branches to test the code. 
 
 
-
-## Some valuable notes:
-
-Docker is used to launch a lightweight microservice that "usually" performs one critical service.  Usually you want to use Docker to do such a microservice like:
-
-- Mail (SMTP) Service
-- DNS Service
-- Website
-- Database
-- etc.
 
 A docker container can launch itself faster than a normal VM with minimum services.  I have taken the time to write down some key commands like:
 
@@ -70,3 +59,13 @@ A docker container can launch itself faster than a normal VM with minimum servic
 
 ####### docker run -d -p 3000:3000 -p 8080:80 [image_name]:tag
 
+* I was going to migrate today from the current production blusky7 but then I realized, I would end up with two environments and could potentially end up paying for the resources that terraform created.
+
+* However the plan would now be:
+* Make note of the current configurations and match them with what I have in Terraform
+* Then delete all resources that would result in a duplicate 
+* Once all is removed that would present a duplicated entry
+* I would then delete all default things in a region.  Then launch the terraform configuration.
+
+#### And allow docker to run the website 
+- Finally create another container and move the DB to that one
