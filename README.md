@@ -64,24 +64,21 @@ This will create a universal system that can be transported to other cloud provi
 
 ### Jenkins within Container
 - [ ] Build Jenkins image
-            - [ ] Using Jenkins
-                - [ ] Setup Jenkins into container
-                - [ ] Deploy KanBoard container object
-                - [ ] Deploy NodeJS App container
-                - [ ] Create a website container
+    - [ ] Create a Jenkins Pipeline
+        - [ ] Jenkinsfile
+          - [ ] Deploy KanBoard container object
+            - [ ] Launch NodeJS App container
+            - [ ] Launch Docker website container
 
 
    
         
-          
-            
+## Kubernetes
+- [ ] [Setup and Install]()
+- [ ] Setup [load balancer](https://kubernetes.io/docs/concepts/services-networking/)
+- [ ] Launch within [Pipeline](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Jenkins#why-a-pipeline)
 
-
-- [ ] Getting started with Kubernetes
-            - [ ] Setup and Install
-            - [ ] Management of containers and review dashboard
-            - [ ] Setup load balancer
-            - [ ] Spin-up and turn down of containers
+        
       
         
 
