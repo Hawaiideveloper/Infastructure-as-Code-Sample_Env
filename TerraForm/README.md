@@ -22,6 +22,8 @@ The main.tf file will create a:
     ```
 
 
+- [ ] Bonus Terraform excerpt is [issue 6 which will allow a pipeline](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/6#issuecomment-751418702)
+
 #### Terraform most useful [commands](https://www.terraform.io/docs/commands/index.html) below:
 
 

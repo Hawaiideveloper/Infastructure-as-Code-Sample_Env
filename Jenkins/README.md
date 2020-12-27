@@ -1,3 +1,17 @@
+Docker Install and configuration of Jenkins Container:
+
+##### This addresses [issue 6](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/6#issuecomment-751418702)
+
+[Docker bridge](https://www.bogotobogo.com/DevOps/Docker/Docker-Bridge-Driver-Networks.php)
+	
+###### Mapping local file system to internal docker container    
+    Maps the /var/jenkins_home directory in the container to the Docker volume with the name jenkins-data. Instead of mapping the /var/jenkins_home directory to a Docker volume, you could also map this directory to one on your machine’s local file system. For example, specifying the option
+--volume $HOME/jenkins:/var/jenkins_home would map the container’s /var/jenkins_home directory to the jenkins subdirectory within the $HOME directory on your local machine, which would typically be /Users/<your-username>/jenkins or /home/<your-username>/jenkins. Note that if you change the source volume or directory for this, the volume from the docker:dind container above needs to be updated to match this.
+
+
+
+
+
 # [Jenkinsfile](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/) 
 
 ### Creating a Jenkinsfile, which is checked into source control [1], provides a number of immediate benefits:
