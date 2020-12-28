@@ -1,5 +1,5 @@
 dev_instance_type = "t2.micro"
-public_ssh_key    = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZsEeeSp3M+y+SNpw5Sz1BahnW2iK9TVTCPPdIUMCj5HKgdINABOIWk5LzGPW7FyCDEHNdz0IniGrtC0v/aUY7fH0s1ODJiJ5BsJs1vhQzatnYx+xpNqjCgcKWHFWWFmY4xbVO1ZD8ONwbLzPNjubmp1lyH/42bSPOzQ5MGSvpOw8tcg5V1mp7C11c5w8tGPQyQby1T50ijgRAc6p6/I/xTmC8dF2iGpwhEzXPoAqWqHwP2607nz7YHv3fSXIMmeu5tgOb+7oKeMGEjfpU3qRSNO5CTRxwIYztuC8yafa2Af46lNZ+MKc9Wr+4tVFj8CiRw5vmuspLGZrW3YuwO49R"
+public_ssh_key    = ""
 
 
 
