@@ -1,6 +1,6 @@
 # Ansible - Terraform  plan
 
-[please issue 6 for more details](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/6#issuecomment-751418702)
+[Please see issue 6 for more details](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/6#issuecomment-751418702)
 
 sample play syntax to install Docker via Ansible:
 *ansible-playbook -l Docker  -i host.ini -u ubuntu playbook.yml*
