@@ -1,5 +1,8 @@
 # Ansible - Terraform  plan
 
+did this from upstairs bedroom computer, now heading down stairs to do the actual settings from office laptop
+
+
 [Please see issue 6 for more details](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/6#issuecomment-751418702)
 
 sample play syntax to install Docker via Ansible:
