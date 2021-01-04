@@ -8,7 +8,7 @@ Because if we don't have our IaC we will spend all of our time building and have
 Not too mention people will probably make [human errors](https://en.wikipedia.org/wiki/Human_error#:~:text=Human%20error%20refers%20to%20something,system%20outside%20its%20acceptable%20limits%22.)  Nothing is worse than getting a 2am call and having to perform a task... while half asleep.
 
 #### What will this do?
-This will create a universal system that can be transported to other cloud providers using agonistic tools.  It starts with AWS and will later integrate with other providers like:
+This will create a universal system that uses  [Pipelines from Jenkins](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Jenkins/pipeline) that can be transported to other cloud providers using the universal agonistic tools.  It starts with AWS and will later integrate with other providers like:
 - Google cloud compute (GCP)
 - Microsoft Azure
 - Oracle cloud
@@ -50,9 +50,9 @@ This will create a universal system that can be transported to other cloud provi
 
 ### Migrations of VMs to Containers
 - [x] Docker
+- [ ] [Deploy a Jenkins image](https://www.jenkins.io/doc/book/installing/docker/) and configure
     - [x] Getting started with Docker and its images
 - [x] Migrate Web server to a new container
-- [ ] Build Jenkins image
 - [ ] Migrate MongoDB documents to new MongoDB container
  - [ ] Setup Domain Name Server (DNS) container
     - [ ] Setup Simple Mail Transport Protocol (SMTP) server
@@ -62,26 +62,23 @@ This will create a universal system that can be transported to other cloud provi
     - [ ] Bonus 
       - [ ] Setup Asterisk server to call us 
 
-### Jenkins within Container
+### Jenkins
 - [ ] Build Jenkins image
-            - [ ] Using Jenkins
-                - [ ] Setup Jenkins into container
-                - [ ] Deploy KanBoard container object
-                - [ ] Deploy NodeJS App container
-                - [ ] Create a website container
+    - [ ] Create a [Jenkins Pipeline](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Jenkins/pipeline)
+        - [ ] [Jenkinsfile](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/dev_branch/Jenkins/pipeline/Jenkinsfile)
+          - [ ] Deploy KanBoard container object
+            - [ ] Launch NodeJS App container
+            - [ ] Launch Docker website container
 
 
    
         
-          
-            
+## Kubernetes
+- [ ] [Setup and Install](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Ansible/Production/Kubernetes)
+- [ ] Setup [load balancer](https://kubernetes.io/docs/concepts/services-networking/)
+- [ ] Launch within [Pipeline](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Jenkins#why-a-pipeline)
 
-
-- [ ] Getting started with Kubernetes
-            - [ ] Setup and Install
-            - [ ] Management of containers and review dashboard
-            - [ ] Setup load balancer
-            - [ ] Spin-up and turn down of containers
+        
       
         
 

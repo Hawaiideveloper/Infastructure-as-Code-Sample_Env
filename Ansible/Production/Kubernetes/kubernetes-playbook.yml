@@ -1,0 +1,80 @@
+#https://docs.ansible.com/ansible/latest/collections/community/kubernetes/k8s_module.html
+
+- name: Create a k8s namespace
+  community.kubernetes.k8s:
+    name: testing
+    api_version: v1
+    kind: Namespace
+    state: present
+
+- name: Create a Service object from an inline definition
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: web
+        namespace: testing
+        labels:
+          app: galaxy
+          service: web
+      spec:
+        selector:
+          app: galaxy
+          service: web
+        ports:
+        - protocol: TCP
+          targetPort: 8000
+          name: port-8000-tcp
+          port: 8000
+
+- name: Remove an existing Service object
+  community.kubernetes.k8s:
+    state: absent
+    api_version: v1
+    kind: Service
+    namespace: testing
+    name: web
+
+# Passing the object definition from a file
+
+- name: Create a Deployment by reading the definition from a local file
+  community.kubernetes.k8s:
+    state: present
+    src: /testing/deployment.yml
+
+- name: >-
+    Read definition file from the Ansible controller file system.
+    If the definition file has been encrypted with Ansible Vault it will automatically be decrypted.
+  community.kubernetes.k8s:
+    state: present
+    definition: "{{ lookup('file', '/testing/deployment.yml') | from_yaml }}"
+
+- name: Read definition template file from the Ansible controller file system
+  community.kubernetes.k8s:
+    state: present
+    template: '/testing/deployment.j2'
+
+- name: Read definition template file from the Ansible controller file system that uses custom start/end strings
+  community.kubernetes.k8s:
+    state: present
+    template:
+      path: '/testing/deployment.j2'
+      variable_start_string: '[['
+      variable_end_string: ']]'
+
+- name: fail on validation errors
+  community.kubernetes.k8s:
+    state: present
+    definition: "{{ lookup('template', '/testing/deployment.yml') | from_yaml }}"
+    validate:
+      fail_on_error: yes
+
+- name: warn on validation errors, check for unexpected properties
+  community.kubernetes.k8s:
+    state: present
+    definition: "{{ lookup('template', '/testing/deployment.yml') | from_yaml }}"
+    validate:
+      fail_on_error: no
+      strict: yes
