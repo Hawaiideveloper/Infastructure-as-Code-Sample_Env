@@ -19,7 +19,6 @@ This will create a universal system that uses  [Pipelines from Jenkins](https://
 > *Use of this repo constitutes your willingness and liability to read and make your own decisions.  This repo is for educational experimental use only.  Therefore all liability, or legal matters are forfeited by both the reader and writer for this walkthrough and all of its documentation provides no guarantee of services and/or content may change without notice.  Neither AlcoTerra, Halfaway Services or any company that Corey Albright works with or for or afterwards constitues an agreement or liability to access such systems or any liability.*  For this tutorial the author assumes the use of a MacOS device.  The authors preferred system of choice.  It is recommended that the user find(s) an equivelent systems like Linux or have access to a terminal based system like Windows Subsystem for Linux.  To proceed with the documentation.
 
 
-
 ## Amazon Section
 
 ### Steps needed to create a cloud based environment with security and VPN in Amazon Web Services (AWS) that **can be easily migrated to other clouds with agonostic tools** 
@@ -64,7 +63,7 @@ This will create a universal system that uses  [Pipelines from Jenkins](https://
 
 ### Jenkins
 - [ ] Build Jenkins image
-    - [ ] Create a [Jenkins Pipeline](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Jenkins/pipeline)
+    - [ ] Create a [Jenkins Pipeline ~ Jenkinsfile located at root](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Jenkins/pipeline)
         - [ ] [Jenkinsfile](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/dev_branch/Jenkins/pipeline/Jenkinsfile)
           - [ ] Deploy KanBoard container object
             - [ ] Launch NodeJS App container
