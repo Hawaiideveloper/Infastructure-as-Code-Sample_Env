@@ -19,8 +19,8 @@ For those of us to have a bad memory and juggle many projects, we sometimes miss
 
 
 ## When should I use this repo:
-If you have little time and need to stand-up a system in:
-- [x] Amazon that has EC2-[instance of your choice](https://aws.amazon.com/ec2/instance-types/?trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_LATAMO&sc_publisher=Google&sc_category=Cloud%20Computing&sc_country=LATAMO&sc_geo=LATAM&sc_outcome=acq&sc_detail=aws%20ec2%20instance%20types&sc_content=%7Bad%20group%7D&sc_matchtype=e&sc_segment=490407964038&sc_medium=ACQ-P%7CPS-GO%7CBrand%7CDesktop%7CSU%7CCloud%20Computing%7CEC2%7CLATAMO%7CEN%7CSitelink&s_kwcid=AL!4422!3!490407964038!e!!g!!aws%20ec2%20instance%20types&ef_id=CjwKCAjwr_uCBhAFEiwAX8YJgXmeFWnqrpMipj0tBkRvpzIppTqmrg5Vhj917YCpIZwyHOZr4yNbhBoC5joQAvD_BwE:G:s&s_kwcid=AL!4422!3!490407964038!e!!g!!aws%20ec2%20instance%20types)
+If you have little time and need to stand-up a quick reliable and repeatable system in:
+- [x] Amazon that has an [instance of your choice](https://aws.amazon.com/ec2/instance-types/?trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_LATAMO&sc_publisher=Google&sc_category=Cloud%20Computing&sc_country=LATAMO&sc_geo=LATAM&sc_outcome=acq&sc_detail=aws%20ec2%20instance%20types&sc_content=%7Bad%20group%7D&sc_matchtype=e&sc_segment=490407964038&sc_medium=ACQ-P%7CPS-GO%7CBrand%7CDesktop%7CSU%7CCloud%20Computing%7CEC2%7CLATAMO%7CEN%7CSitelink&s_kwcid=AL!4422!3!490407964038!e!!g!!aws%20ec2%20instance%20types&ef_id=CjwKCAjwr_uCBhAFEiwAX8YJgXmeFWnqrpMipj0tBkRvpzIppTqmrg5Vhj917YCpIZwyHOZr4yNbhBoC5joQAvD_BwE:G:s&s_kwcid=AL!4422!3!490407964038!e!!g!!aws%20ec2%20instance%20types) as well as kubernetes and dockey capabilities that are managed by Jenkins
 - [ ] Google that has a compute node
 - [ ] Azure that has a virtual machine
 
