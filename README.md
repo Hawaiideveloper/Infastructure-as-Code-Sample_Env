@@ -48,7 +48,7 @@ This will create a universal system that uses  [Pipelines from Jenkins](https://
   
 
 ### Migrations of VMs to Containers
-- [x] Docker
+- [x] Why Docker?
 - [ ] [Deploy a Jenkins image](https://www.jenkins.io/doc/book/installing/docker/) and configure
     - [x] Getting started with Docker and its images
 - [x] Migrate Web server to a new container
