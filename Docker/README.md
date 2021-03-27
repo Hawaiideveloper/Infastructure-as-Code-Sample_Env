@@ -1,3 +1,9 @@
+# Why Docker?
+
+---
+
+
+
 ## Some valuable Docker notes:
 
 Docker is used to launch a lightweight microservice that "usually" performs one critical service.  Usually you want to use Docker to do such a microservice like:
