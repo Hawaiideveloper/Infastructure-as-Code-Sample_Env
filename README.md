@@ -1,5 +1,35 @@
-# Automated Infrastructure as Code (IaC) Sample_Environment for public Clouds
+# Why this repo exists:
+For those of us to have a bad memory and juggle many projects, we sometimes miss the basics and forget to record good practices.  This repo enforces a systematic approach launching an ``` entire infrastructure ``` that is ready to test and deploy applications for:
 
+ - [ ] Site Reliability
+    - [ ] Bash / Zsh / sh scripts and applications
+    - [ ] Python packages
+        - [ ] 2.7
+        - [ ] 3.6  
+ - [ ] Mobile Applications
+    - [ ] iOS
+    - [ ] Android
+- [ ] Web Applications 
+    - [ ] nodeJS Applications
+    - [ ] Angular
+- [ ] Server Applications
+    - [ ] Java packages
+
+   
+
+
+## When should I use this repo:
+If you have little time and need to stand-up a system in:
+- [x] Amazon that has EC2-[instance of your choice](https://aws.amazon.com/ec2/instance-types/?trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_LATAMO&sc_publisher=Google&sc_category=Cloud%20Computing&sc_country=LATAMO&sc_geo=LATAM&sc_outcome=acq&sc_detail=aws%20ec2%20instance%20types&sc_content=%7Bad%20group%7D&sc_matchtype=e&sc_segment=490407964038&sc_medium=ACQ-P%7CPS-GO%7CBrand%7CDesktop%7CSU%7CCloud%20Computing%7CEC2%7CLATAMO%7CEN%7CSitelink&s_kwcid=AL!4422!3!490407964038!e!!g!!aws%20ec2%20instance%20types&ef_id=CjwKCAjwr_uCBhAFEiwAX8YJgXmeFWnqrpMipj0tBkRvpzIppTqmrg5Vhj917YCpIZwyHOZr4yNbhBoC5joQAvD_BwE:G:s&s_kwcid=AL!4422!3!490407964038!e!!g!!aws%20ec2%20instance%20types)
+- [ ] Google that has a compute node
+- [ ] Azure that has a virtual machine
+
+# Automated Infrastructure as Code (IaC) Sample_Environment for public Clouds
+### Currently supports the following cloud providers
+- [x] Amazon
+- [ ] Google
+- [ ] Azure
+- [ ] Digital Ocean
 
 #### *Note: Please use the [dev_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/dev_branch) if you are actively building with this document.  As the dev_branch will have the nightly builds.  The [main_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/main) is the stable branch; but it will lack all current updates .*
 
