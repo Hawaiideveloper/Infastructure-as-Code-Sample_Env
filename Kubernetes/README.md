@@ -8,6 +8,7 @@ In laymans terms it is used to prevet monolitic applications that are huge and d
 Kubernetes is a free software that is highly distributed for Linux, Windows, and macOS.  [Download your perspective version of Kubernetes](https://kubernetes.io/docs/tasks/tools/)
 
 ## How does it work
+![Screen Shot 2021-03-29 at 7 13 38 PM](https://user-images.githubusercontent.com/13468708/112911365-470d2b80-90c3-11eb-925d-cf92466c037f.png)
 
 
 ### Get the load balancer working
