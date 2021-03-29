@@ -1,5 +1,5 @@
 # What is this repository doing: 
-This repository is a collection of tools that will build a central server and associated supporting micro-systems like:
+This repository is a collection of tools that will build an entire platform with a Jenkins central processing / build / deployment system and its associated supporting micro-services for:
 - DNS
 - WINS
 - LDAP / Active Directory
