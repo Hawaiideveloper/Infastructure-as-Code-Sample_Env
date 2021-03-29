@@ -1,5 +1,5 @@
 # Kubernetes
-Provides a container "juggler" approach to assist in minimizing downtime.
+Provides a container "juggler" approach to assist in minimizing downtime.  Technically speaking it provides a framework to run distributed systems resiliently, and scales as well as does failovers for applications.
 
 ### Get the load balancer working
 
