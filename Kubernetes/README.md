@@ -1,5 +1,5 @@
 # Kubernetes
-
+Provides a container "juggler" approach to assist in minimizing downtime.
 
 ### Get the load balancer working
 
