@@ -1,5 +1,11 @@
-# Kubernetes
-Provides a container "juggler" approach to assist in minimizing downtime.  Technically speaking it provides a framework to run distributed systems resiliently, and scales as well as does failovers for applications.
+# What is Kubernetes
+Is a framework to run distributed systems resiliently, and scales as well as does failovers for applications using containers.
+
+## Why Use Kubernetes
+Kubernetes is portable, extensible, and runs on an open-source platform.  It provides a container "juggler" approach to assist in minimizing downtime.  Technically speaking it provides an econsystem of tools that facilitate declarative configuration and automation.
+
+## Where to get Kubernetes
+Kubernetes is a free software that is highly distributed for Linux, Windows, and macOS.  [Download your perspective version of Kubernetes](https://kubernetes.io/docs/tasks/tools/)
 
 ### Get the load balancer working
 
