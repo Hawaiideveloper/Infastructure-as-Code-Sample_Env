@@ -41,7 +41,7 @@ Using Katacoda for labs and setup a testing environment to do such a task.  Plea
 ![Screen Shot 2021-04-17 at 3 49 09 PM](https://user-images.githubusercontent.com/13468708/115125241-c2604f80-9f94-11eb-9ebe-73bfce3c0798.png)
 
 
-### Get the load balancer working
+### Get the load balancer working 
 
 
 - [ ] Then import all containers from docker into kubernetes to serve as a load balancer and if anything fails the integrity checks which will be monitored by [Jenkins_hourly_job]()
