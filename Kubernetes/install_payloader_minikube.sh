@@ -36,3 +36,14 @@ minikube config set driver docker
 
 echo "kubectl is now configured to use "minikube" cluster and "default" namespace by default"
 
+# Letting iptables see bridged traffic
+
+cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+br_netfilter
+EOF
+
+cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+sudo sysctl --system

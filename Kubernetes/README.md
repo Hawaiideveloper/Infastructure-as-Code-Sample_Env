@@ -53,16 +53,25 @@ Using Katacoda for labs and setup a testing environment to do such a task.  Plea
 
 _A layman explanation between miniKube and kubeCtl is that minikube is a local installation and a kubectl is an enterprise type thing.  Basically minikube would function like an ESX host and kubeCtl would be vsphere.  The second best way to explain would be managing a horse(minikube) or managing the track for many horses(kubectl).
 - [miniKube](https://minikube.sigs.k8s.io/docs/start/)
+
+Requirements: 
     - 2 CPUs or more  
     - 2GB of free memory  
     - 20GB of free disk space  
     - Internet connection  
     - Container or virtual machine manager, such as: Docker  
 
-- [kubectl]() and its [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+minikube is local Kubernetes, focusing on making it easy to learn and develop for Kubernetes.
+
+All you need is Docker (or similarly compatible) container or a Virtual Machine environment, and Kubernetes
+
+- [kubectl](https://minikube.sigs.k8s.io/docs/handbook/kubectl/) and its [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
     - ? Hardware requirements?
 
+gets configured to access the kubernetes cluster control plane inside minikube when the minikube start command is executed.
+
+However if kubectl is not installed locally, minikube already includes kubectl
 
 - [kubeadm]()
     - A compatible Linux host. The Kubernetes project provides generic instructions for Linux distributions based on Debian and Red Hat, and those distributions without a package manager.
@@ -74,11 +83,31 @@ _A layman explanation between miniKube and kubeCtl is that minikube is a local i
     - Swap disabled. You MUST disable swap in order for the kubelet to work properly.
 
 
+
+### Control plane:
+The control plane's components make global decisions about the cluster (for example, scheduling), as well as detecting and responding to cluster events (for example, starting up a new pod when a deployment's replicas field is unsatisfied).
+
+Control plane components can be run on any machine in the cluster. However, for simplicity, set up scripts typically start all control plane components on the same machine, and do not run user containers on this machine. 
+
+
+
+
+
+
+
+
+
 ### Get the load balancer working 
 
 
 - [ ] Then import all containers from docker into kubernetes to serve as a load balancer and if anything fails the integrity checks which will be monitored by [Jenkins_hourly_job]()
     - [ ] It will terminate and kubernetes will create another container then pull the most recent production branch for the site.
+
+
+
+
+
+
 
 
 
@@ -89,4 +118,4 @@ The following Docker runtime security options are currently unsupported and will
 
 - [userns-remap](https://docs.docker.com/engine/security/userns-remap/)  
 - [rootless](https://docs.docker.com/engine/security/rootless/)  
-
+- [kubeadm_iptables see bridged traffic](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
