@@ -61,7 +61,7 @@ _A layman explanation between miniKube and kubeCtl is that minikube is a local i
 
 - [kubectl]() and its [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
-    - 
+    - ? Hardware requirements?
 
 
 - [kubeadm]()
