@@ -14,3 +14,18 @@ kubectl create -f jenkins-service.yaml --namespace jenkins
 
 # Check that the Service is running
 kubectl get services --namespace jenkins
+
+
+# Use kubectl to retrieve your node IPs
+kubectl get nodes -o wide
+
+# retrieve your Pod name
+kubectl get pods -n jenkins
+
+# please enter the following
+echo "kubectl logs jenkins-example777-twnvn -n jenkins"
+
+sleep 3
+
+echo "scroll down and look for...  password to proceed to installation:"
+
