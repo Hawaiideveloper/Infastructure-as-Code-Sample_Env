@@ -4,6 +4,8 @@ Is a framework to run distributed systems resiliently, and scales as well as doe
 ## Why Use Kubernetes
 In laymans terms it is used to prevet monolitic applications that are huge and difficult to manage due to their size and unadapitility for rolling updates or management of services.  Kubernetes is portable, extensible, and runs on an open-source platform.  It provides a container "juggler" approach to assist in minimizing downtime.  Technically speaking it provides an econsystem of tools that facilitate declarative configuration and automation.
 
+Furthermore ... With modern web services, users expect applications to be available 24/7, and developers expect to deploy new versions of those applications several times a day. Containerization helps package software to serve these goals, enabling applications to be released and updated without downtime. Kubernetes helps you make sure those containerized applications run where and when you want, and helps them find the resources and tools they need to work. Kubernetes is a production-ready, open source platform designed with Google's accumulated experience in container orchestration, combined with best-of-breed ideas from the community.
+
 ## Where to get Kubernetes
 Kubernetes is a free software that is highly distributed for Linux, Windows, and macOS.  [Download your perspective version of Kubernetes](https://kubernetes.io/docs/tasks/tools/)
 
@@ -39,6 +41,24 @@ Kubernetes provides you with:
 Using Katacoda for labs and setup a testing environment to do such a task.  Please feel free to visit [here](https://www.katacoda.com) to setup an account and begin testing things.
 
 ![Screen Shot 2021-04-17 at 3 49 09 PM](https://user-images.githubusercontent.com/13468708/115125241-c2604f80-9f94-11eb-9ebe-73bfce3c0798.png)
+
+
+
+### Getting started and getting things installed
+_A layman explanation between miniKube and kubeCtl is that minikube is a local installation and a kubectl is an enterprise type thing.  Basically minikube would function like an ESX host and kubeCtl would be vsphere.  The second best way to explain would be managing a horse(minikube) or managing the track for many horses(kubectl).
+- [miniKube](https://minikube.sigs.k8s.io/docs/start/)
+    - 2 CPUs or more  
+    - 2GB of free memory  
+    - 20GB of free disk space  
+    - Internet connection  
+    - Container or virtual machine manager, such as: Docker  
+
+- [kubectl]() and its [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
+    - 
+
+
+- [kubeadm]()
 
 
 ### Get the load balancer working 
