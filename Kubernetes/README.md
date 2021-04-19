@@ -45,6 +45,12 @@ Using Katacoda for labs and setup a testing environment to do such a task.  Plea
 
 
 ### Getting started and getting things installed
+
+#### "Quick script is [here](install_payloader.sh) -Use at your own risk-"
+  
+    
+
+
 _A layman explanation between miniKube and kubeCtl is that minikube is a local installation and a kubectl is an enterprise type thing.  Basically minikube would function like an ESX host and kubeCtl would be vsphere.  The second best way to explain would be managing a horse(minikube) or managing the track for many horses(kubectl).
 - [miniKube](https://minikube.sigs.k8s.io/docs/start/)
     - 2 CPUs or more  
@@ -59,6 +65,13 @@ _A layman explanation between miniKube and kubeCtl is that minikube is a local i
 
 
 - [kubeadm]()
+    - A compatible Linux host. The Kubernetes project provides generic instructions for Linux distributions based on Debian and Red Hat, and those distributions without a package manager.
+    - 2 GB or more of RAM per machine (any less will leave little room for your apps).
+    - 2 CPUs or more.
+    - Full network connectivity between all machines in the cluster (public or private network is fine).
+    - Unique hostname, MAC address, and product_uuid for every node. See here for more details.
+    - Certain ports are open on your machines. See here for more details.
+    - Swap disabled. You MUST disable swap in order for the kubelet to work properly.
 
 
 ### Get the load balancer working 
