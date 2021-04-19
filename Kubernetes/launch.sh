@@ -2,22 +2,15 @@
 
 
 
-
-
-# Initialize the kubeadm 
-sudo kubeadm init
-
-
-# Provide cluster version
-kubectl version -o json
-
-
-# Provide cluster information
-kubectl cluster-info dump
-
 # Show current ip address
 ip add sh
 
 
+# Start the local kubernetes cluster called miniKube
+minikube start
+
+
+# List all running name spaces
+kubectl get po -A
 
 

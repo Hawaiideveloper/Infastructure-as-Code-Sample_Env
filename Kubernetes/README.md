@@ -79,3 +79,14 @@ _A layman explanation between miniKube and kubeCtl is that minikube is a local i
 
 - [ ] Then import all containers from docker into kubernetes to serve as a load balancer and if anything fails the integrity checks which will be monitored by [Jenkins_hourly_job]()
     - [ ] It will terminate and kubernetes will create another container then pull the most recent production branch for the site.
+
+
+
+## Troubleshooting possible issues:
+
+The following Docker runtime security options are currently unsupported and will not work with the Docker driver (see #9607):
+
+
+- [userns-remap](https://docs.docker.com/engine/security/userns-remap/)  
+- [rootless](https://docs.docker.com/engine/security/rootless/)  
+
