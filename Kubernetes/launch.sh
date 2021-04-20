@@ -7,7 +7,7 @@ ip add sh
 
 
 # Start the local kubernetes cluster called miniKube
-minikube start
+minikube start --memory=1959mb --driver=docker
 
 
 # List all running name spaces
