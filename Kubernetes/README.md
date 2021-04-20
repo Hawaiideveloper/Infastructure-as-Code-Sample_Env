@@ -84,6 +84,9 @@ However if kubectl is not installed locally, minikube already includes kubectl
 
 
 
+##### ["kubeadm join ["[api-server-endpoint]"](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/) [flags]"]
+
+
 ### Control plane:
 The control plane's components make global decisions about the cluster (for example, scheduling), as well as detecting and responding to cluster events (for example, starting up a new pod when a deployment's replicas field is unsatisfied).
 
