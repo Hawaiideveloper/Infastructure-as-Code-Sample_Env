@@ -13,7 +13,7 @@ docker pull datadog/squid
 
 
 # Without cache
-docker run --name squid -d -p 3128:3128 Datadog/squid
+docker run --name squid -d -p 3128:3128 datadog/squid
 
 
 
