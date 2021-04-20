@@ -94,6 +94,20 @@ Control plane components can be run on any machine in the cluster. However, for 
 
 
 
+###  StatefulSets 
+A StatefulSets is like a Deployment which manages Pods and guarantees about the ordering and uniqueness of these Pods. It maintains a sticky identity for each of their Pods. It helps in deployment of application that needs persistency, unique network identifiers (DNS, Hostnames etc) and are meants for stateful application. If a pod gets terminated or deleted, a volume data will remain intact if managed by persistentvolumes.
+
+
+### StorageClass
+StorageClass helps in administration to describe the “classes” of storage offered by Kubernetes. Each StorageClass has different provisioner (GCEPersistentDisk, AWSElasticBlockStore, AzureDisk etc) that determines what volume plugin is used for provisioning storage.
+
+### PersistentVolume
+A PersistentVolume (PV) is a piece of storage in the cluster that has been provisioned by an administrator. PVs are resources available to be used by any Pod. Any Pod can claim these volumes by mean of PersistentVolumeClaims (PVC) and released eventually when claim is deleted.
+
+### Headless Services
+Headless Services are used to configure DNS of pods having same selectors defined by services. It is not generally used for load-balancing purpose. Each headless services configured with label selectors helps in defining unique network identifiers for pods running in statefulset.
+
+
 
 
 
