@@ -3,12 +3,12 @@
 
 
 # Ensure proper permissions
-
+sudo usermod -aG docker $USER && newgrp docker
 
 
 
 # Pull the docker 
-
+docker pull datadog/squid
 
 
 
