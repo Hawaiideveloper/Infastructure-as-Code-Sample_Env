@@ -1,1 +1,1 @@
-Squid
+Proxy
