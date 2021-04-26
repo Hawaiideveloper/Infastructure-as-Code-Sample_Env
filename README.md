@@ -3,21 +3,21 @@ This repository is a collection of tools that will build an entire platform with
 
 
 - WebSites:
-      - Clexys.com
-      - (etc... etc..)
-          - Leveraging systems like:  
-              - MongoDB
-              - AWS
-              - Apache
-              - Linux
-              - NodeJs
-              - Docker 
-              - Kubernetes
-                  - DNS
-                  - WINS
-                  - Proxies
-- LDAP
-- DHCP
+      - Clexys.com  
+      - (etc... etc..)  
+          - Leveraging systems like:    
+              - MongoDB  
+              - AWS  
+              - Apache  
+              - Linux  
+              - NodeJs  
+              - Docker   
+              - Kubernetes  
+                  - DNS  
+                  - WINS  
+                  - Proxies  
+- LDAP  
+- DHCP  
 
 
 Jenkins is then placed into a dedicated network and returns docker build images into that network service & and finally operates on a system of dedicated worker machines to do: builds, tests, and deployments.  After a successful deployment is met, a kubernetes interface is introduced to assist with load balancing and manage at the production level architecture.
