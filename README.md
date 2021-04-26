@@ -1,5 +1,55 @@
-# Automated Infrastructure as Code (IaC) Sample_Environment for public Clouds
+# What is this repository doing: 
+This repository is a collection of tools that will build an entire platform with a Jenkins central processing / build / deployment system and its associated supporting micro-services for:
+- Docker
+- Kubernetes
+- DNS
+- WINS
+- LDAP / Active Directory
+- DHCP
+- Jenkins
 
+Jenkins is then placed into a dedicated network and returns docker build images into that network service & and finally operates on a system of dedicated worker machines to do: builds, tests, and deployments.  After a successful deployment is met, a kubernetes interface is introduced to assist with load balancing and manage at the production level architecture.
+
+# Why this repo exists:
+For those of us that have a bad memories and juggle many projects, we sometimes miss the basics and forget to record good practices.  This repo enforces a systematic approach to launching an ``` entire infrastructure ``` that is ready to test and deploy applications for:  
+
+ - [ ] Site Reliability
+    - [ ] Bash / Zsh / sh scripts and applications
+    - [ ] Python packages
+        - [ ] 2.7
+        - [ ] 3.6  
+ - [ ] Mobile Applications
+    - [ ] iOS
+    - [ ] Android
+- [ ] Web Applications 
+    - [ ] nodeJS Applications
+    - [ ] Angular
+- [ ] Server Applications
+    - [ ] Java packages
+
+# How should I use this repo:
+
+There is a launch script within the launch folder, it will provide a menu driven system that allows you to select what your desired system should look like.
+It will give options like:
+- [ ] (Create) Start from scratch, and build entire system
+- [ ] (Read) Restart the entire platform
+- [ ] (Update)Refresh Jenkins and re-apply all settings
+- [ ] (Delete) Terminate the entire platform
+
+
+
+# When should I use this repo:
+If you have little time and need to stand-up a quick reliable, repeatable, and efficient use of resoures within:
+- [x] Amazon that has an [instance of your choice](https://aws.amazon.com/ec2/instance-types/?trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_LATAMO&sc_publisher=Google&sc_category=Cloud%20Computing&sc_country=LATAMO&sc_geo=LATAM&sc_outcome=acq&sc_detail=aws%20ec2%20instance%20types&sc_content=%7Bad%20group%7D&sc_matchtype=e&sc_segment=490407964038&sc_medium=ACQ-P%7CPS-GO%7CBrand%7CDesktop%7CSU%7CCloud%20Computing%7CEC2%7CLATAMO%7CEN%7CSitelink&s_kwcid=AL!4422!3!490407964038!e!!g!!aws%20ec2%20instance%20types&ef_id=CjwKCAjwr_uCBhAFEiwAX8YJgXmeFWnqrpMipj0tBkRvpzIppTqmrg5Vhj917YCpIZwyHOZr4yNbhBoC5joQAvD_BwE:G:s&s_kwcid=AL!4422!3!490407964038!e!!g!!aws%20ec2%20instance%20types) , which we will be using this [image here](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/bd2365b1e43b00b3e816610080696176b0025334/TerraForm/production_site/main.tf#L208) that uses kubernetes to manage its resources and docker capabilities that are easily managed by Jenkins and its plugins which is created by this script.
+- [ ] Google that has a compute node
+- [ ] Azure that has a virtual machine
+
+# Automated Infrastructure as Code (IaC) Sample_Environment for public Clouds
+### Currently supports the following cloud providers
+- [x] Amazon
+- [ ] Google
+- [ ] Azure
+- [ ] Digital Ocean
 
 #### *Note: Please use the [dev_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/dev_branch) if you are actively building with this document.  As the dev_branch will have the nightly builds.  The [main_branch](https://github.com/Hawaiideveloper/Sample_Env/tree/main) is the stable branch; but it will lack all current updates .*
 
@@ -17,7 +67,6 @@ This will create a universal system that uses  [Pipelines from Jenkins](https://
 
 ## Disclaimer:
 > *Use of this repo constitutes your willingness and liability to read and make your own decisions.  This repo is for educational experimental use only.  Therefore all liability, or legal matters are forfeited by both the reader and writer for this walkthrough and all of its documentation provides no guarantee of services and/or content may change without notice.  Neither AlcoTerra, Halfaway Services or any company that Corey Albright works with or for or afterwards constitues an agreement or liability to access such systems or any liability.*  For this tutorial the author assumes the use of a MacOS device.  The authors preferred system of choice.  It is recommended that the user find(s) an equivelent systems like Linux or have access to a terminal based system like Windows Subsystem for Linux.  To proceed with the documentation.
-
 
 
 ## Amazon Section
@@ -49,7 +98,7 @@ This will create a universal system that uses  [Pipelines from Jenkins](https://
   
 
 ### Migrations of VMs to Containers
-- [x] Why Docker?
+- [x] [Why Docker?](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/dev_branch/Docker/README.md#why-docker)
 - [ ] [Deploy a Jenkins image](https://www.jenkins.io/doc/book/installing/docker/) and configure
     - [x] Getting started with Docker and its images
 - [x] Migrate Web server to a new container
@@ -64,7 +113,7 @@ This will create a universal system that uses  [Pipelines from Jenkins](https://
 
 ### Jenkins
 - [ ] Build Jenkins image
-    - [ ] Create a [Jenkins Pipeline](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Jenkins/pipeline)
+    - [ ] Create a [Jenkins Pipeline ~ Jenkinsfile located at root](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/tree/dev_branch/Jenkins/pipeline)
         - [ ] [Jenkinsfile](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/dev_branch/Jenkins/pipeline/Jenkinsfile)
           - [ ] Deploy KanBoard container object
             - [ ] Launch NodeJS App container
