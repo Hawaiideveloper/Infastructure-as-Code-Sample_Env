@@ -37,24 +37,13 @@ Kubernetes provides you with:
 - Self-healing Kubernetes restarts containers that fail, replaces containers, kills containers that don't respond to your user-defined health check, and doesn't advertise them to clients until they are ready to serve.  
 - Secret and configuration management Kubernetes lets you store and manage sensitive information, such as passwords, OAuth tokens, and SSH keys. You can deploy and update secrets and application configuration without rebuilding your container images, and without exposing secrets in your stack configuration.  
 
+
+
 ### Getting Started:
 Issue 15 in the following [Thread](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/15#issuecomment-811350626) will provide the needed resources and installation that will enable you to get started quickly with a VM that has Ubuntu 20.04
 
 
-
-
-
-
-### Katacoda Webhook
-Using Katacoda for labs and setup a testing environment to do such a task.  Please feel free to visit [here](https://www.katacoda.com) to setup an account and begin testing things.
-
-![Screen Shot 2021-04-17 at 3 49 09 PM](https://user-images.githubusercontent.com/13468708/115125241-c2604f80-9f94-11eb-9ebe-73bfce3c0798.png)
-
-
-
-### Getting started and getting things installed
-
-#### "Quick script is [here](install_payloader.sh) -Use at your own risk-"
+###### "Quick Kubernetes script is [here](install_payloader.sh) -Use at your own risk-"
   
     
 
@@ -143,4 +132,8 @@ The following Docker runtime security options are currently unsupported and will
 
 - [userns-remap](https://docs.docker.com/engine/security/userns-remap/)  
 - [rootless](https://docs.docker.com/engine/security/rootless/)  
+
 - [kubeadm_iptables see bridged traffic](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
+
+- [kubeadm_iptables see bridged traffic](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
+
