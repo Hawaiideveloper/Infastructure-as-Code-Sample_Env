@@ -37,6 +37,14 @@ Kubernetes provides you with:
 - Self-healing Kubernetes restarts containers that fail, replaces containers, kills containers that don't respond to your user-defined health check, and doesn't advertise them to clients until they are ready to serve.  
 - Secret and configuration management Kubernetes lets you store and manage sensitive information, such as passwords, OAuth tokens, and SSH keys. You can deploy and update secrets and application configuration without rebuilding your container images, and without exposing secrets in your stack configuration.  
 
+### Getting Started:
+Issue 15 in the following [Thread](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/15#issuecomment-811350626) will provide the needed resources and installation that will enable you to get started quickly with a VM that has Ubuntu 20.04
+
+
+
+
+
+
 ### Katacoda Webhook
 Using Katacoda for labs and setup a testing environment to do such a task.  Please feel free to visit [here](https://www.katacoda.com) to setup an account and begin testing things.
 
