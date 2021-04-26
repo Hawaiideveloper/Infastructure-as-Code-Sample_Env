@@ -1,17 +1,29 @@
 # What is this repository doing: 
 This repository is a collection of tools that will build an entire platform with a Jenkins central processing / build / deployment system and its associated supporting micro-services for:
-- Docker
-- Kubernetes
-- DNS
-- WINS
-- LDAP / Active Directory
+
+
+- WebSites:
+      - Clexys.com
+      - (etc... etc..)
+          - Leveraging systems like:  
+              - MongoDB
+              - AWS
+              - Apache
+              - Linux
+              - NodeJs
+              - Docker 
+              - Kubernetes
+                  - DNS
+                  - WINS
+                  - Proxies
+- LDAP
 - DHCP
-- Jenkins
+
 
 Jenkins is then placed into a dedicated network and returns docker build images into that network service & and finally operates on a system of dedicated worker machines to do: builds, tests, and deployments.  After a successful deployment is met, a kubernetes interface is introduced to assist with load balancing and manage at the production level architecture.
 
 # Why this repo exists:
-For those of us that have a bad memories and juggle many projects, we sometimes miss the basics and forget to record good practices.  This repo enforces a systematic approach to launching an ``` entire infrastructure ``` that is ready to test and deploy applications for:  
+For those of us that have a bad memories and juggle many projects, we sometimes miss the basics and forget to record good practices.  This repo enforces a systematic approach to launching an ``` entire infrastructure for enterprise``` that is ready to test and deploy applications for:  
 
  - [ ] Site Reliability
     - [ ] Bash / Zsh / sh scripts and applications
