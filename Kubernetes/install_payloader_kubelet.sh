@@ -2,10 +2,17 @@
 ## Generic installation on all nodes
 
 sysctl -w net.ipv4.ip_forward=1
+
+# Creating / Changing  net.ipv4.ip_forward=1 to net.ipv4.ip_forward=1 globally in document called systctl.conf
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf 
+
+
+# Load in sysctl settings from the file specified or /etc/sysctl.conf if none given. Specifying - as filename means reading data from standard input.
 sudo sysctl -p /etc/sysctl.conf
 
+# disable, respectively, devices and files for paging and swapping.
 swapoff -a
+
 sed -i '2s/^/#/' /etc/fstab 
 
 apt-get update
