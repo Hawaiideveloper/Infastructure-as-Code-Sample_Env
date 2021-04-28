@@ -43,7 +43,7 @@ Kubernetes provides you with:
 Issue 15 in the following [Thread](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/15#issuecomment-811350626) will provide the needed resources and installation that will enable you to get started quickly with a VM that has Ubuntu 20.04
 
 
-###### "Quick Kubernetes script is [here](install_payloader.sh) -Use at your own risk-"
+###### "Quick Kubernetes quick install script is [here](install_payloader.sh) -Use at your own risk-"
   
     
 
