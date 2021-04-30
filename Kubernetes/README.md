@@ -9,6 +9,10 @@ Furthermore ... With modern web services, users expect applications to be availa
 ## Where to get Kubernetes
 Kubernetes is a free software that is highly distributed for Linux, Windows, and macOS.  [Download your perspective version of Kubernetes](https://kubernetes.io/docs/tasks/tools/)
 
+Or...
+
+READ this issue and begin trying out Kubernetes' minikube that does everything an enterprise environment does, but save you money, time, and resources for a dev environemnt to practice on, and trust me...  It has everthing that an API server and its workers would normally have on it.  Read more [here](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/32)
+
 ## How does it work
 
 A Kubernetes cluster consists of a set of worker machines, called nodes, that run containerized applications. Every cluster has at least one worker node.
