@@ -1,4 +1,4 @@
-### Actualmente el servidor squid se activsa, y se logra crear contenedores de docker usando volumen y guardando informacion sobre nuestros cambios en squid. el comando parea crear nuevos contenedores usando un volumen creado es:
+### Actualmente el servidor squid se activa, y se logra crear contenedores de docker usando volumen y guardando informacion sobre nuestros cambios en squid. el comando parea crear nuevos contenedores usando un volumen creado es:
 
 docker run -p 3128:80 -v proxyProbando:/etc/squid/ --detach --name proxy1 datadog/squid:latest
 
