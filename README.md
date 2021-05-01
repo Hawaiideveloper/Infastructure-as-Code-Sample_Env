@@ -1,28 +1,39 @@
 # What is this repository doing: 
 This repository is a collection of tools that will build an entire platform with a Jenkins central processing / build / deployment system and its associated supporting micro-services for:
-- Docker
-- Kubernetes
-- DNS
-- WINS
-- LDAP / Active Directory
-- DHCP
-- Jenkins
 
-Jenkins is then placed into a dedicated network and returns docker build images into that network service & and finally operates on a system of dedicated worker machines to do: builds, tests, and deployments.  After a successful deployment is met, a kubernetes interface is introduced to assist with load balancing and manage at the production level architecture.
+(CI/CD) ephermal Jenkins instance is then placed into a dedicated network and returns docker build images into that network service & and finally operates on a system of dedicated worker machines to do: nodeJS builds, feature/ topic branch tests, and nodeJS web applications that serve as our deployments within our AWS playground.  After a successful deployment is met, a kubernetes interface is introduced to assist with load balancing and manage at the production level architecture.
+
+- Website(s) in Production:  
+    - [x] [Clexys.com](Clexys.com)
+
+
+
+| Tools Used  | Description | Completed |
+| ----------- | ----------- | ----------- |
+| MongoDB | Clexys.com | yes |
+| NodeJs | Runs backend and front end under NodeJS | yes|
+| AWS | Runs NodeJs Playground Using Custom Docker images | yes |
+| Linux | primary hosts for K8s Test Env | yes |
+| Docker | Name spaces to reduce and create lean memory spaces within linux VM Production Servers | yes |
+| Kubernetes | Pods that provide managed services to Businesses | Yes |
+| Network & Auth Services  | LDAP, DHCP, Firewall, proxy, NAT, WINS, DNS, Forwarders / Reverse traffic | No | 
+
+
+
 
 # Why this repo exists:
-For those of us that have a bad memories and juggle many projects, we sometimes miss the basics and forget to record good practices.  This repo enforces a systematic approach to launching an ``` entire infrastructure ``` that is ready to test and deploy applications for:  
+For those of us that have a bad memories and juggle many projects, we sometimes miss the basics and forget to record good practices.  This repo enforces a systematic approach to launching an ``` entire infrastructure for enterprise``` that is ready to test and deploy applications for:  
 
  - [ ] Site Reliability
-    - [ ] Bash / Zsh / sh scripts and applications
+    - [x] Bash / Zsh / sh scripts and applications
     - [ ] Python packages
         - [ ] 2.7
-        - [ ] 3.6  
+        - [ ] 3.6 
  - [ ] Mobile Applications
     - [ ] iOS
     - [ ] Android
 - [ ] Web Applications 
-    - [ ] nodeJS Applications
+    - [x] nodeJS Applications
     - [ ] Angular
 - [ ] Server Applications
     - [ ] Java packages
