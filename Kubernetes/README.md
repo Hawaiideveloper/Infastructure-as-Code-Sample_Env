@@ -9,10 +9,6 @@ Furthermore ... With modern web services, users expect applications to be availa
 ## Where to get Kubernetes
 Kubernetes is a free software that is highly distributed for Linux, Windows, and macOS.  [Download your perspective version of Kubernetes](https://kubernetes.io/docs/tasks/tools/)
 
-Or...
-
-READ this issue and begin trying out Kubernetes' minikube that does everything an enterprise environment does, but save you money, time, and resources for a dev environemnt to practice on, and trust me...  It has everthing that an API server and its workers would normally have on it.  Read more [here](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/32)
-
 ## How does it work
 
 A Kubernetes cluster consists of a set of worker machines, called nodes, that run containerized applications. Every cluster has at least one worker node.
@@ -44,23 +40,86 @@ Kubernetes provides you with:
 
 
 ### Getting Started:
-Issue 15 in the following [Thread](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/15#issuecomment-811350626) will provide the needed resources and installation that will enable you to get started quickly with a VM that has Ubuntu 20.04
+  - We will be using Digital Ocean for our tutorial and it will be based on [issue_01](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/1#issuecomment-855467625) also due to the length of time needed to manual install and configure a running and working cluster we will be using a hosted provider as well.  However if you wish to locally host a cluster please see the section entitled [How to build and monitor local host a cluster](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/dev_branch/Kubernetes/README.md#to-host-a-local-cluster-please-review)
 
 
-###### "Quick Kubernetes quick install script is [here](install_payloader.sh) -Use at your own risk-"
+
+
+###### "Quick Kubernetes script is [here](install_payloader.sh) -Use at your own risk-"  
   
-    
+    or...  follow the instructions here for Virtual machine with 3 processors and 3GB memory and Solid state drive with 40GB  
+
+
+### To host a local cluster please review:
+Issue 15 in the following [Thread](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/15#issuecomment-811350626) will provide the needed resources and installation that will enable you to get started quickly with a VM that has Ubuntu 20.04
+##### To get Kubernetes manually installed
+    Step 1:  To install VirtualBox Headless on Ubuntu Server, run the command:
+```sudo apt install virtualbox virtualbox-ext-pack```  
+
+    Step 2: Confirm the installation with y and hit Enter.  
+    Step 3: Next, the licence agreement appears on the screen. Press Tab and then Enter to continue  
+    Step 4: The installer asks you to agree with the terms of the VirtualBox PUEL license by selecting Yes.  
+    Step 5: Wait for everything to finish and proceed to step 6  
+    Step 6: Download the latest Minikube binary using the wget command:
+    ```wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64```
+    Step 7: Copy the downloaded file and store it into the /usr/local/bin/minikube directory with.  
+```sudo cp minikube-linux-amd64 /usr/local/bin/minikube```
+    Step 8: Next, give the file executive permission using the chmod 
+    ```sudo chmod 755 /usr/local/bin/minikube``
+    Step 9: Finally, verify you have successfully installed Minikube by checking the version of the software
+    ```minikube version```
+    Step 9: Download kubectl with the following command
+    ```curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl```
+    Step 10: Make the binary executable by typing
+    ```chmod +x ./kubectl```
+    Step 11: Move the binary into your path with the command:
+    ```sudo mv ./kubectl /usr/local/bin/kubectl```
+    Step 12: Verify the installation by checking the version of your kubectl instance
+```kubectl version -o json```
+    Step 13: Start your personalized minikube
+    ```minikube start```
+
+
+#### To review your installation and test if it is running correctly
+    Step 14: To see the kubectl configuration
+    ```kubectl config view```
+    Step 15: To show the cluster information
+    ```kubectl cluster-info```
+    Step 16: To check running nodes use the following command
+    ```kubectl get nodes```
+    Step 17: To see a list of all the Minikube pods
+    ```kubectl get pod```
+    Step 18: To ssh into the Minikube VM
+    ```minikube ssh```
+    Step 19: To exit out of the shell
+    ```exit```
+    Step 20: To stop running the single node cluster
+    ```minikube stop```
+    Step 21: To check its status 
+    ```minikube status```
+    Step 22: To enable and access the Minikube dashboard via terminal
+    ```minikube dashboard```
+    Step 23: Acquire the dashboard’s IP address
+    ```minikube dashboard --url```
+    Step 24: Check external IP
+    ```kubectl get svc```
+
+
+    ### Exposing an External IP Address to Access an Application in a Cluster
+
+
+
 
 
 _A layman explanation between miniKube and kubeCtl is that minikube is a local installation and a kubectl is an enterprise type thing.  Basically minikube would function like an ESX host and kubeCtl would be vsphere.  The second best way to explain would be managing a horse(minikube) or managing the track for many horses(kubectl).
 - [miniKube](https://minikube.sigs.k8s.io/docs/start/)
 
 Requirements: 
-    - 2 CPUs or more  
-    - 2GB of free memory  
+    - 2 CPUs (I personally have seen crashes with 2, so if possible use VM and make it 3)
+    - 2GB of free memory is not enough, make it 3  
     - 20GB of free disk space  
     - Internet connection  
-    - Container or virtual machine manager, such as: Docker  
+    - Container or virtual machine manager, such as: Docker  / VirtualBox Hypervisor
 
 minikube is local Kubernetes, focusing on making it easy to learn and develop for Kubernetes.
 
