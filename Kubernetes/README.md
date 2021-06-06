@@ -40,14 +40,19 @@ Kubernetes provides you with:
 
 
 ### Getting Started:
-Issue 15 in the following [Thread](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/15#issuecomment-811350626) will provide the needed resources and installation that will enable you to get started quickly with a VM that has Ubuntu 20.04
+  - We will be using Digital Ocean for our tutorial and it will be based on [issue_01](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/1#issuecomment-855467625) also due to the length of time needed to manual install and configure a running and working cluster we will be using a hosted provider as well.  However if you wish to locally host a cluster please see the section entitled [How to build and monitor local host a cluster]
+
+
 
 
 ###### "Quick Kubernetes script is [here](install_payloader.sh) -Use at your own risk-"  
   
     or...  follow the instructions here for Virtual machine with 3 processors and 3GB memory and Solid state drive with 40GB  
 
-### To get Kubernetes manually installed
+
+### To host a local cluster please review:
+Issue 15 in the following [Thread](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/15#issuecomment-811350626) will provide the needed resources and installation that will enable you to get started quickly with a VM that has Ubuntu 20.04
+##### To get Kubernetes manually installed
     Step 1:  To install VirtualBox Headless on Ubuntu Server, run the command:
 ```sudo apt install virtualbox virtualbox-ext-pack```  
 
