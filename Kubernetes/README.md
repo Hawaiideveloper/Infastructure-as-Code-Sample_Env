@@ -40,7 +40,7 @@ Kubernetes provides you with:
 
 
 ### Getting Started:
-  - We will be using Digital Ocean for our tutorial and it will be based on [issue_01](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/1#issuecomment-855467625) also due to the length of time needed to manual install and configure a running and working cluster we will be using a hosted provider as well.  However if you wish to locally host a cluster please see the section entitled [How to build and monitor local host a cluster]
+  - We will be using Digital Ocean for our tutorial and it will be based on [issue_01](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/1#issuecomment-855467625) also due to the length of time needed to manual install and configure a running and working cluster we will be using a hosted provider as well.  However if you wish to locally host a cluster please see the section entitled [How to build and monitor local host a cluster](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/blob/dev_branch/Kubernetes/README.md#to-host-a-local-cluster-please-review)
 
 
 
