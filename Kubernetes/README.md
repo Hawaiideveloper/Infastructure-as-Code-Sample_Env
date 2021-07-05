@@ -72,8 +72,19 @@ Issue 15 in the following [Thread](https://github.com/Hawaiideveloper/Infastruct
     Step 12: Verify the installation by checking the version of your kubectl instance
 ```kubectl version -o json```
     Step 13: Start your personalized minikube
-    ```minikube start```
+    
 
+    Step 13.5
+                A.) There are more options I suggest taking adantage of like:
+
+        Selecting different drivers and memory configurations.  Example being I use:
+
+  ```minikube start --memory=2200mb```  <-- that limits its memory use to 2200mb
+        but there is more like:
+            ```minikube start --vm-driver=hyperkit```  <-- selects hypervisor driver this one uses "hyperkit", but others use docker, and virtualbox.   Try them out with different providers and chipsets to acheive higher performance.       
+... Now if you are doing it for the first time.  This could take considerably longer; but...
+
+FinOps 101 do more with less.  Requires a technology such as this microservices platform.
 
 #### To review your installation and test if it is running correctly
     Step 14: To see the kubectl configuration
