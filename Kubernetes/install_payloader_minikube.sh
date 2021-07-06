@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Prerequisties 
-echo "please ensure you have docker installed, are running on ubuntu"
+echo "please ensure you have docker installed, and are running on ubuntu"
 
 
 echo "steps are:"
