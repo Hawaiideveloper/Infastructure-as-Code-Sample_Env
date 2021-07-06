@@ -1,7 +1,20 @@
 # What is this repository doing: 
-This repository is a collection of tools that will build an entire platform with a Jenkins central processing / build / deployment system and its associated supporting micro-services for:
+This repository is a collection of tools that will build an entire platform within a microservices strategy.  It uses a Jenkins build system that also serves as a central processing unit that will:
+- [ ] build
+- [ ] validate 
+- [ ] deploy
+- [ ] optimize the systems and its associated supported micro-services
 
-(CI/CD) ephermal Jenkins instance is then placed into a dedicated network and returns docker build images into that network service & and finally operates on a system of dedicated worker machines to do: nodeJS builds, feature/ topic branch tests, and nodeJS web applications that serve as our deployments within our AWS playground.  After a successful deployment is met, a kubernetes interface is introduced to assist with load balancing and manage at the production level architecture.
+It constructs a (CI/CD) ephermal Jenkins instance and then it is placed into a dedicated network and returns docker build images into that network services.
+Then it spins up Kubernetes clusters to load-balance Jenkins through priortization, and finally operates on a system of dedicated worker machines that serve as the full-stack components of: 
+- [ ] NodeJS builds
+- [ ] MongoDB
+- [ ] Terraform
+- [ ] Subsequent Jenkins Masters
+- [ ] Containers an their runtime envs [docker, containerd, etc]
+
+
+The that serve as our deployments within our `Agnostic` playground.  After a successful deployment is met, a kubernetes interface is introduced to assist with load balancing and managed at the: development, staging, and production level.
 
 - Website(s) in Production:  
     - [x] [Clexys.com](Clexys.com)
