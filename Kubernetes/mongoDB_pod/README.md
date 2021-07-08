@@ -17,7 +17,8 @@ Manually run with CLI that is native to Ubuntu since Ubuntu has a wealth of open
 Jenkins, can build this job, and deployment via a series of scripts within [Jenkinsfile](../../Jenkins/pipeline/MongoDB_JOB/MongoDB_Jenkinsfile)
 
 
-
+## Security:
+Secrets live within k8s not within the repo
 
 
 
