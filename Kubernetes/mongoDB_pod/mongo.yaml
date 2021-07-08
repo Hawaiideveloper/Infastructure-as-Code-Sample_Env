@@ -21,7 +21,9 @@ metadata:
                   - containerPort: 27017
                   env:
                   - name: MONGO_INITDB_ROOT_USERNAME
-                    value:
+                    valueFrom:
+                        secretKeyRef:
+                            name: mongo-secret
                   - mame: MONGO_INITDB_ROOT_PASSWORD
-                    value
+                    valueFrom:
                   
