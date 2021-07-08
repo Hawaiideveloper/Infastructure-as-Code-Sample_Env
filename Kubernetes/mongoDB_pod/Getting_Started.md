@@ -32,3 +32,7 @@ Follow the [manual instructions]() to configure mongodb
 Ignition is a new provisioning utility designed specifically for container OSs like Flatcar Container Linux, which allows you to manipulate disks during early boot. This includes partitioning disks, formatting partitions, writing files (regular files, systemd units, networkd units, and more), and configuring users. On the first boot, Ignition reads its configuration from a source-of-truth (remote URL, network metadata service, or hypervisor bridge, for example) and applies the configuration.
 
 Ignition Examples: https://github.com/kinvolk/ignition/blob/flatcar-master/doc/examples.md
+
+
+#### Deployment in Kubernetes
+```kubectl apply -f mogo.yaml``` 11:41

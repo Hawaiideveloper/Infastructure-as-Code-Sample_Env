@@ -18,7 +18,7 @@ Jenkins, can build this job, and deployment via a series of scripts within [Jenk
 
 
 ## Security:
-Secrets live within k8s not within the repo see issue [40](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/40)
+Secrets live within k8s not within the repo see issue [40](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/40) they are referenced [using key value pairs](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/40#issuecomment-876639221)
 
 ## Configuration files
 
