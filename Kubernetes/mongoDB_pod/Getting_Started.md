@@ -35,4 +35,7 @@ Ignition Examples: https://github.com/kinvolk/ignition/blob/flatcar-master/doc/e
 
 
 #### Deployment in Kubernetes
-```kubectl apply -f mogo.yaml``` 11:41
+```kubectl apply -f mogo.yaml``` <--- will  deploy app using the deployment file
+
+#### To view its progress 
+When deploying review issue [43](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/43)
