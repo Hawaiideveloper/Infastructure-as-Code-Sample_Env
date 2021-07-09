@@ -22,6 +22,7 @@ Secrets live within k8s not within the repo see issue [40](https://github.com/Ha
 
 ## Configuration files
 
+[Service issue 46](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/46) describes all the needed commands and how to run the needed services via mongo.yaml
 
 
 
