@@ -39,3 +39,5 @@ Ignition Examples: https://github.com/kinvolk/ignition/blob/flatcar-master/doc/e
 
 #### To view its progress 
 When deploying review issue [43](https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/43)
+
+#### Create a method for mongo-express to be accessed remotely
