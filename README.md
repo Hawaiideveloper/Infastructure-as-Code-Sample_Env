@@ -1,6 +1,6 @@
 # What is this repository doing: 
 This repository is a collection of tools that will build an entire platform within a microservices strategy.  It uses a Jenkins build system that also serves as a central processing unit that will:
-- [ ] build
+- [x] build
 - [ ] validate 
 - [ ] deploy
 - [ ] optimize the systems and its associated supported micro-services
