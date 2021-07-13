@@ -6,9 +6,6 @@
 echo " please see my issue that explains this file's existence"
 echo "https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/57"
 
-
-#!/bin/bash
-
 echo "These scripts will prepare ubuntu to run Kubernetes"
 
 
@@ -18,7 +15,7 @@ echo "These scripts will prepare ubuntu to run Kubernetes"
 
 #To install using script
 
-
+minikube delete
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
@@ -26,6 +23,8 @@ sudo apt-get install curl -y
 sudo apt-get install apt-transport-https
 
 sudo apt install virtualbox virtualbox-ext-pack
+sudo apt-get install -y conntrack
+
 
 echo "provided you agreed to everything"
 echo " you will now be redirected to minikube installation"
@@ -39,6 +38,14 @@ minikube version
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
+
+minikube start --alsologtostderr -v=7 to debug crashes
+
+minikube config set driver virtualbox
+
+minikube start --driver=virtualbox
+
+
 kubectl version -o json
 
 #minikube start
@@ -71,4 +78,3 @@ kubectl version -o json
 
 # To install minikube with homebrew uncomment the next line and do the following ....
 # Do not uncomment for production sytems
-
