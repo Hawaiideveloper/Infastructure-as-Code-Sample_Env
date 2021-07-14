@@ -60,6 +60,8 @@ kubectl version -o json
 
 #exit
 
+
+# Simply copy and then comments below and paste them as needed, into console
 #minikube stop
 #minikube status
 #minikube delete
