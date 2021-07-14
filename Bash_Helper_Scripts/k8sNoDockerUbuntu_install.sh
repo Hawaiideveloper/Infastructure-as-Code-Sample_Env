@@ -25,6 +25,11 @@ sudo apt-get install apt-transport-https
 sudo apt install virtualbox virtualbox-ext-pack
 sudo apt-get install -y conntrack
 
+# create a vm via command-line please see my issue titled "How to create / provision a virtual machine using CLI in Virtualbox" 
+https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/58
+
+# This actually belongs to the main repo
+#VBoxManage modifyvm name_of_your_ubuntu_vm --nested-hw-virt on
 
 echo "provided you agreed to everything"
 echo " you will now be redirected to minikube installation"
