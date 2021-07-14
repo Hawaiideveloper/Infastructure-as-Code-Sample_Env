@@ -9,6 +9,9 @@ echo "https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues
 echo "These scripts will prepare ubuntu to run Kubernetes"
 
 
+#Get rid of swapping issues:
+sudo swapoff -a 
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
 
 
