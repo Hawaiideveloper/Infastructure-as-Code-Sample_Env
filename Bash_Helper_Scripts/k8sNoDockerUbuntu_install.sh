@@ -30,9 +30,14 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 sudo apt-get install curl -y
-sudo apt-get install apt-transport-https
+sudo apt-get install apt-transport-https -y
 
-sudo apt install virtualbox virtualbox-ext-pack
+echo "Now waiting 5 seconds"
+sleep 5
+
+echo "now agreeing to the VirtualBox license agreement"
+
+sudo apt install virtualbox virtualbox-ext-pack -y
 sudo apt-get install -y conntrack
 
 # create a vm via command-line please see my issue titled "How to create / provision a virtual machine using CLI in Virtualbox" 
