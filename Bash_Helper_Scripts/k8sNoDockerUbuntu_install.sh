@@ -54,7 +54,8 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 
-minikube start --alsologtostderr -v=7 to debug crashes
+# Use the below script to do debugging and view logs
+#minikube start --alsologtostderr -v=7 to debug crashes
 
 minikube config set driver virtualbox
 
