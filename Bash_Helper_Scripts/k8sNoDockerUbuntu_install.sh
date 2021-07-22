@@ -37,8 +37,8 @@ sleep 5
 
 echo "now agreeing to the VirtualBox license agreement"
 
-sudo apt install virtualbox --accept-license -y 
-sudo apt install virtualbox-ext-pack --accept-license -y
+sudo apt install virtualbox -y 
+sudo apt install virtualbox-ext-pack -y
 sudo apt-get install conntrack -y
 
 # create a vm via command-line please see my issue titled "How to create / provision a virtual machine using CLI in Virtualbox" 
@@ -65,7 +65,14 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 minikube config set driver virtualbox
 
-minikube start --driver=virtualbox
+# Default ommand start with virtualbox
+# minikube start --driver=virtualbox
+
+
+# Start Minikube and limit to 2 CPUs and 2 Gig of memory and 20GB of HDD space
+minikube start --driver=virtualbox --cpus=2 --memory=2g --disk-size=20g
+
+
 
 
 kubectl version -o json
