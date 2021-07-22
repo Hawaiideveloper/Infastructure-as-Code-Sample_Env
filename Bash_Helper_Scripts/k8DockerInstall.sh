@@ -41,6 +41,15 @@ sudo docker run hello-world
 
 # Kubernetes Install
 sudo apt install -y curl wget apt-transport-https
+
+
+# Disable ipv6
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=1
+
+
+
 wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo cp minikube-linux-amd64 /usr/local/bin/minikube
 sudo chmod +x /usr/local/bin/minikube
