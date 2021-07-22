@@ -70,7 +70,7 @@ minikube config set driver virtualbox
 
 
 # Start Minikube and limit to 2 CPUs and 2 Gig of memory and 20GB of HDD space
-minikube start --driver=virtualbox --cpus=2 --memory=2g --disk-size=20g
+minikube start --driver=virtualbox --cpus=2 --memory=2600 --disk-size=20g
 
 
 
