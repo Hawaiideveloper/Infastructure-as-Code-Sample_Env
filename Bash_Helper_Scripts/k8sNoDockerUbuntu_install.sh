@@ -37,11 +37,12 @@ sleep 5
 
 echo "now agreeing to the VirtualBox license agreement"
 
-sudo apt install virtualbox virtualbox-ext-pack -y
-sudo apt-get install -y conntrack
+sudo apt install virtualbox --accept-license -y 
+sudo apt install virtualbox-ext-pack --accept-license -y
+sudo apt-get install conntrack -y
 
 # create a vm via command-line please see my issue titled "How to create / provision a virtual machine using CLI in Virtualbox" 
-https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/58
+echo "more details located at  https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/58"
 
 # This actually belongs to the main repo
 #VBoxManage modifyvm name_of_your_ubuntu_vm --nested-hw-virt on
