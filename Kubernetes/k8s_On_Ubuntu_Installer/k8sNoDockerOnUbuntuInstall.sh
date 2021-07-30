@@ -3,6 +3,9 @@
 
 
 
+
+echo "Use at your own risk, no liability, or responsibility from me"
+
 echo " please see my issue that explains this file's existence"
 echo "https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/57"
 
