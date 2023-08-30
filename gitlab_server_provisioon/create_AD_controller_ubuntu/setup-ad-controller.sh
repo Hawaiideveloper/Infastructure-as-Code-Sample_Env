@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Check for VirtualBox and Vagrant
+# Check if VirtualBox and Vagrant are installed
 if ! command -v virtualbox &> /dev/null; then
     echo "VirtualBox is not installed. Install it first."
     exit 1
@@ -18,11 +18,11 @@ vagrant box add ubuntu/bionic64
 mkdir -p ad-controller && cd ad-controller
 vagrant init ubuntu/bionic64
 
-# Configure Vagrantfile
+# Configure Vagrantfile for Bridged Networking
 cat <<EOL > Vagrantfile
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
-  config.vm.network "private_network", type: "dhcp"
+  config.vm.network "public_network", bridge: "en0: inet" # Adjust the interface name if necessary
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "2048"
@@ -31,7 +31,11 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    sudo apt-get install -y samba krb5-user krb5-config winbind smbclient
+    sudo apt-get install -y samba krb5-user krb5-config winbind smbclient ufw
+
+    # Enable UFW and allow Samba traffic
+    sudo ufw enable
+    sudo ufw allow samba
   SHELL
 end
 EOL
