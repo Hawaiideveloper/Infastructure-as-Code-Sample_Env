@@ -1,0 +1,276 @@
+#!/bin/bash
+
+# Create the 'public' folder if it doesn't exist
+mkdir -p public
+
+# Create or update the HTML files
+cat <<EOL > public/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ItsAbookIngApp.com</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ItsAbookIngApp.com</h1>
+        <p>
+            Explore a world of opportunities where you can discover, connect, and immerse yourself in a diverse range of offerings.
+        </p>
+       <div class="container">
+        <h1>Search Results</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+        </div>
+        <div class="categories">
+            <a href="booking/index.html" class="category bookings">
+                <h2 class="category-title">Bookings</h2>
+                <p class="category-description">Book cars, houses, services, and experiences. Discover, reserve, and explore the world with us! From travel to local services, we've got you covered.</p>
+            </a>
+            <a href="https://www.alyking.com" target="_blank" class="category products">
+                <h2 class="category-title">Products</h2>
+                <p class="category-description">Find unique and handpicked products from global sellers, spanning from fashion to gadgets and beyond. Unleash your shopping desires!</p>
+            </a>
+            <a href="services/index.html" class="category services">
+                <h2 class="category-title">Services</h2>
+                <p class="category-description">Browse, offer, or request services tailored to your needs. Whether you're seeking professional expertise or sharing your skills, it's all here.</p>
+            </a>
+        </div>
+    </div>
+        <div id="search-results"></div>
+    </div>
+</body>
+</html>
+EOL
+
+# Create the index.js in the scripts folder
+mkdir -p public/scripts
+cat <<EOL > public/scripts/index.js
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    const searchResults = document.getElementById("search-results");
+
+    searchButton.addEventListener("click", function () {
+        const query = searchInput.value;
+
+        // Use an absolute URL if your frontend is on a different port/domain.
+        axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
+            .then((response) => {
+                searchResults.innerHTML = response.data;
+            })
+            .catch((error) => {
+                console.error("Error fetching search results:", error);
+            });
+    });
+});
+
+EOL
+
+# Create or update the CSS folder and CSS file
+mkdir -p public/css
+cat <<EOL > public/css/index.css
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.categories {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.category {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.category:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category.products:hover {
+    background-color: #ff0000;
+}
+
+.category.bookings:hover {
+    background-color: #800080;
+}
+
+.category.services:hover {
+    background-color: #FFD700;
+}
+
+.category h2.category-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.category-description {
+    display: none;
+}
+
+.category:hover .category-description {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Add your additional CSS styles here */
+EOL
+
+# Create or update the 'booking' folder and its contents
+mkdir -p public/booking
+cat <<EOL > public/booking/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+</head>
+<body>
+    <h1>Bookings</h1>
+    <!-- Content for the 'Bookings' page -->
+</body>
+</html>
+EOL
+
+# Create or update the 'products' folder and its contents
+mkdir -p public/products
+cat <<EOL > public/products/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <!-- Content for the 'Products' page -->
+</body>
+</html>
+EOL
+
+# Create or update the 'services' folder and its contents
+mkdir -p public/services
+cat <<EOL > public/services/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<body>
+    <h1>Services</h1>
+    <!-- Content for the 'Services' page -->
+</body>
+</html>
+EOL
+
+# Create the Node.js server script
+cat <<EOL > server.js
+const express = require('express');
+const axios = require('axios');
+const cheerio = require('cheerio');
+const path = require('path');
+const fs = require('fs');
+const cors = require('cors');  // Add this line at the top
+
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.use(cors());  // Add this line to use the CORS middleware
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Handle search requests
+app.get('/search', (req, res) => {
+  const userQuery = req.query.q;
+
+  // Make an HTTP request to AlyKing's search page
+  const searchUrl = "https://www.alyking.com/search?q=" + encodeURIComponent(userQuery);
+
+  axios.get(searchUrl)
+    .then((response) => {
+      const searchResultsHTML = response.data;
+
+      // Parse and extract relevant data using cheerio
+      const $ = cheerio.load(searchResultsHTML);
+
+      // Extract search results and relevant information
+      const searchResults = []; // Populate this array with search results
+
+      // Send the search results to the client-side (front-end)
+      res.json({ searchResults });
+    })
+    .catch((error) => {
+      console.error('Error making HTTP request:', error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    });
+});
+
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
+EOL
+
+# Install required Node.js packages
+npm init -y
+npm install express --save
+npm install fs-extra --save
+npm install axios --save
+npm install cheerio --save
+npm install cors --save
+npm install axios@latest
+
+
+# Install additional packages for web scraping or HTTP requests (e.g., puppeteer or axios)
+
+echo "Payload updated successfully!"
+
