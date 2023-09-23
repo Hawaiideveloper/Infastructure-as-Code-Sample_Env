@@ -1,11 +1,8 @@
-Create gitlab server
-
-
 #!/bin/bash
 
 set -e
 
-BASE_DIR="/Users/president/Documents/gitlab/ItsABookingApp.com/itsabookingappDotCom/infrastructure_payloads/gitlabServer/"
+BASE_DIR="/Users/president/Documents/gitlab/server"
 VAGRANT_DIR="${BASE_DIR}"
 
 function create_vagrantfile() {
