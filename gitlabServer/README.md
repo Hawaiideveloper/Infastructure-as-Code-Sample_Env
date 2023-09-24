@@ -1,3 +1,12 @@
+```
+Note!!!
+```
+This server took about 20 minutes to boot fully after it booted as there are dependecies 
+
+
+
+
+
 Make sure to adjust the BASE_DIR to point to the correct location where you want to create the Vagrantfile and initiate the Vagrant VM. Also, remember to make the file executable, and you can then run the script:
 
 If you have a Vagrant instance running, you can log in to it using `vagrant ssh`. Here are the steps to login to the Vagrant instance:
