@@ -12,7 +12,6 @@ export NVM_DIR="$HOME/.nvm" # Sets the location of the nvm directory.
 export PATH="$HOME/.amplify/bin:$PATH" # Adds the directory containing the Amplify CLI binary to the system PATH.
 
 # Customized colorful prompt resembling a rainbow
-# Customized colorful prompt resembling a rainbow
 function precmd() {
     # Define an array of colors resembling the colors of the rainbow
     local colors=('red' 'yellow' 'green' 'cyan' 'blue' 'magenta' 'purple')
@@ -28,6 +27,7 @@ function precmd() {
         ((color_index = (color_index + 1) % ${#colors[@]}))
     done
 
-    # Set the colored prompt string as the prompt and replace the last character with a $.
+    # Set the colored prompt string as the prompt and replace the last character 
+
     PS1="$colored_prompt\$ "
 }
